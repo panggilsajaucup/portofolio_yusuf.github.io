@@ -941,7 +941,7 @@
 
 <script>
 // ===== DATA STORE =====
-const OWNER_MAC = 'F4:7B:09:A4:B1:B3';
+const OWNER_MAC = 'KLUMpit#001';
 
 const defaultData = {
   profile: {
@@ -1717,7 +1717,7 @@ function renderAdminContent() {
       <input class="admin-input" id="mac-input" placeholder="-----" style="text-align:center;letter-spacing:2px;margin-bottom:12px"
              value="" onkeydown="if(event.key==='Enter')verifyMAC()">
       <button class="admin-save" style="width:100%" onclick="verifyMAC()">Verify & Enter</button>
-      <div id="mac-error" style="color:#dc2626;font-size:.8rem;margin-top:10px;display:none">⚠ MAC address tidak cocok. Akses ditolak.</div>
+      <div id="mac-error" style="color:#dc2626;font-size:.8rem;margin-top:10px;display:none">⚠ Akses ditolak.</div>
     </div>
   `;
   setTimeout(() => document.getElementById('mac-input')?.focus(), 100);
