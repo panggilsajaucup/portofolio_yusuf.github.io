@@ -1,0 +1,35 @@
+name: Keep Supabase Alive
+
+# Jalan tiap Senin & Kamis jam 09:00 UTC (2x seminggu, jauh di bawah batas 7 hari)
+# Bisa juga dipicu manual lewat tab "Actions" di GitHub
+on:
+  schedule:
+    - cron: '0 9 * * 1,4'
+  workflow_dispatch:
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query Supabase table to register activity
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          # Ganti "your_table" dengan nama tabel yang benar-benar ada di project kamu
+          TABLE_NAME: admin_users
+        run: |
+          echo "Pinging Supabase REST API..."
+          http_status=$(curl -s -o response.json -w "%{http_code}" \
+            "${SUPABASE_URL}/rest/v1/${TABLE_NAME}?select=*&limit=1" \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}")
+
+          echo "HTTP status: $http_status"
+          cat response.json
+
+          if [ "$http_status" -ge 200 ] && [ "$http_status" -lt 300 ]; then
+            echo "✅ Berhasil, aktivitas tercatat di Supabase."
+          else
+            echo "❌ Gagal, cek SUPABASE_URL, SUPABASE_ANON_KEY, atau TABLE_NAME."
+            exit 1
+          fi
