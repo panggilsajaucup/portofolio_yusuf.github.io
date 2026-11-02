@@ -3,540 +3,562 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F5F2EB">
 <meta name="title" content="Muhammad Yusuf Luthfi Ijlal – System & Business Analyst">
 <meta name="description" content="Portfolio of Muhammad Yusuf Luthfi Ijlal – experienced in system analysis, business analysis, and digital transformation based in Kudus, Indonesia.">
 <meta property="og:title" content="Muhammad Yusuf Luthfi Ijlal – Portfolio">
 <meta property="og:description" content="System & Business Analyst based in Kudus, Indonesia.">
 <title>Muhammad Yusuf Luthfi Ijlal – Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314171C'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='800' font-size='30' text-anchor='middle' fill='%23F5F2EB'%3Eyl%3C/text%3E%3Ccircle cx='51' cy='46' r='4' fill='%23D5401A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* ==========================================================
+     YUSUF LUTHFI — PORTFOLIO  ·  Editorial redesign
+     Palette: warm paper · ink · signal orange · deep green
+     ========================================================== */
   :root {
-    --navy: #0B2447;
-    --navy-mid: #19376D;
-    --blue: #0065BD;
-    --blue-light: #3B9AE1;
-    --accent: #00C49F;
-    --accent-2: #576CBC;
+    --paper: #F5F2EB;
+    --paper-2: #ECE8DE;
+    --card-bg: #FCFBF7;
+    --ink: #14171C;
+    --ink-2: #2D323B;
+    --muted: #666B73;
+    --line: #DAD5C8;
+    --line-strong: #BDB7A6;
+    --accent: #D5401A;
+    --accent-soft: rgba(213,64,26,0.10);
+    --deep: #0F1F1D;
+    --deep-2: #17302C;
+    --mint: #4FD1A5;
+    --ok: #1B7F5C;
+
+    /* legacy aliases (used by JS-generated markup & admin) */
+    --navy: var(--ink);
+    --navy-mid: var(--ink-2);
+    --blue: var(--accent);
+    --blue-light: var(--accent);
     --white: #FFFFFF;
-    --off-white: #F7F9FC;
-    --gray-light: #EDF0F5;
-    --gray-mid: #B0B8C9;
-    --gray-text: #6B7896;
-    --text-dark: #0B1C3A;
-    --text-body: #2E3A52;
-    --card-bg: #FFFFFF;
-    --section-alt: #F2F6FC;
-    --border: #DDE3EF;
-    --shadow: rgba(11,36,71,0.08);
-    --radius: 14px;
-    --radius-sm: 8px;
+    --off-white: var(--paper);
+    --gray-light: var(--paper-2);
+    --gray-mid: #A7A293;
+    --gray-text: var(--muted);
+    --text-dark: var(--ink);
+    --text-body: var(--ink-2);
+    --section-alt: var(--paper-2);
+    --border: var(--line);
+    --shadow: rgba(20,23,28,0.08);
+    --radius: 18px;
+    --radius-sm: 10px;
     --transition: 0.22s cubic-bezier(.4,0,.2,1);
+
+    --font-display: 'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; font-size: 16px; }
-
+  html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 72px; }
   body {
-    font-family: 'DM Sans', sans-serif;
-    color: var(--text-body);
-    background: var(--white);
+    font-family: var(--font-body);
+    color: var(--ink-2);
+    background: var(--paper);
     overflow-x: hidden;
     line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
   }
+  ::selection { background: var(--accent); color: #fff; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  /* ===== ICONS ===== */
+  .ic { width: 1em; height: 1em; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.14em; }
+  .ic-fill { fill: currentColor; stroke: none; }
 
   /* ===== TYPOGRAPHY ===== */
-  h1,h2,h3,h4,h5 { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); }
-  h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.1; }
-  h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; }
+  h1,h2,h3,h4,h5 { font-family: var(--font-display); color: var(--ink); letter-spacing: -0.02em; }
+  h1 { font-size: clamp(2.8rem, 6.4vw, 5.2rem); font-weight: 800; line-height: 0.98; letter-spacing: -0.04em; }
+  h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.035em; }
   h3 { font-size: 1.15rem; font-weight: 600; }
   h4 { font-size: 1rem; font-weight: 600; }
-  p { color: var(--text-body); }
+  p { color: var(--ink-2); }
 
   /* ===== NAV ===== */
   #main-nav {
     position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-    background: rgba(255,255,255,0.93);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    transition: box-shadow var(--transition);
+    background: rgba(245,242,235,0.86);
+    backdrop-filter: blur(14px) saturate(1.2);
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition), background var(--transition);
   }
-  #main-nav.scrolled { box-shadow: 0 2px 24px var(--shadow); }
-  .nav-inner {
-    max-width: 1180px; margin: 0 auto; padding: 0 24px;
-    display: flex; align-items: center; justify-content: space-between; height: 64px;
-  }
-  .nav-logo { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--navy); text-decoration: none; letter-spacing: -0.5px; }
+  #main-nav.scrolled { border-bottom-color: var(--line); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+  .nav-logo { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; color: var(--ink); text-decoration: none; letter-spacing: -0.06em; }
   .nav-logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 4px; list-style: none; }
-  .nav-links a { text-decoration: none; font-size: 0.88rem; font-weight: 500; color: var(--gray-text); padding: 6px 12px; border-radius: 6px; transition: all var(--transition); }
-  .nav-links a:hover { color: var(--navy); background: var(--gray-light); }
-  .nav-links a.active { color: var(--blue); background: rgba(0,101,189,0.08); }
+  .nav-links { display: flex; gap: 2px; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: 0.82rem; font-weight: 500; color: var(--muted); padding: 7px 11px; border-radius: 100px; transition: all var(--transition); }
+  .nav-links a:hover { color: var(--ink); background: var(--paper-2); }
+  .nav-links a.active { color: #fff; background: var(--ink); }
   .nav-cta { display: flex; gap: 8px; }
-  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 20px; border-radius: 8px; font-family: 'DM Sans',sans-serif; font-size: 0.875rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: all var(--transition); border: none; }
-  .btn-primary { background: var(--navy); color: #fff; }
-  .btn-primary:hover { background: var(--navy-mid); transform: translateY(-1px); }
-  .btn-outline { background: transparent; border: 1.5px solid var(--navy); color: var(--navy); }
-  .btn-outline:hover { background: var(--navy); color: #fff; }
-  .btn-accent { background: var(--accent); color: var(--navy); }
-  .btn-accent:hover { background: #00a885; }
-  .btn-sm { padding: 6px 14px; font-size: 0.8rem; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
-  .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all var(--transition); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 22px; border-radius: 100px; font-family: var(--font-body); font-size: 0.875rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: all var(--transition); border: 1.5px solid transparent; line-height: 1.2; }
+  .btn .ic { font-size: 1.05em; }
+  .btn-primary { background: var(--ink); color: #fff; }
+  .btn-primary:hover { background: var(--accent); transform: translateY(-2px); }
+  .btn-outline { background: transparent; border-color: var(--ink); color: var(--ink); }
+  .btn-outline:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+  .btn-accent { background: var(--accent); color: #fff; }
+  .btn-accent:hover { background: #B8340F; transform: translateY(-2px); }
+  .btn-sm { padding: 8px 16px; font-size: 0.8rem; }
+  .hamburger { display: none; align-items: center; justify-content: center; cursor: pointer; width: 42px; height: 42px; border-radius: 50%; border: 1.5px solid var(--line-strong); color: var(--ink); font-size: 1.25rem; }
 
   /* ===== LAYOUT ===== */
-  .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-  section { padding: 90px 0; }
-  .section-alt { background: var(--section-alt); }
-  .section-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
-  .section-title { margin-bottom: 8px; }
-  .section-sub { color: var(--gray-text); font-size: 1rem; margin-bottom: 40px; }
-  .section-header { margin-bottom: 48px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+  section { padding: 110px 0; position: relative; }
+  .section-alt { background: var(--paper-2); }
+  .section-label { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+  .section-label span { color: var(--ink); }
+  .section-label::after { content: ''; height: 1px; width: 56px; background: var(--line-strong); }
+  .section-title { margin-bottom: 14px; }
+  .section-sub { color: var(--muted); font-size: 1.02rem; max-width: 560px; }
+  .section-header { margin-bottom: 56px; }
 
   /* ===== HERO ===== */
   #hero {
     min-height: 100vh; display: flex; align-items: center;
-    padding-top: 64px;
-    background: linear-gradient(135deg, #EBF3FC 0%, #F7F9FF 50%, #E8F5F0 100%);
+    padding: 100px 0 70px;
+    background:
+      linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 100% 88px,
+      var(--paper);
+    background-blend-mode: normal;
     position: relative; overflow: hidden;
   }
-  .hero-bg-shape {
-    position: absolute; border-radius: 50%; opacity: 0.12; pointer-events: none;
-  }
-  .hero-bg-1 { width: 560px; height: 560px; background: var(--blue); top: -100px; right: -120px; }
-  .hero-bg-2 { width: 300px; height: 300px; background: var(--accent); bottom: -60px; left: -80px; }
-  .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-  @media (min-width: 901px) { .hero-content { padding-top: 48px; } }
-  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,196,159,0.12); border: 1px solid rgba(0,196,159,0.3); color: #007b63; padding: 6px 14px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; margin-bottom: 20px; }
-  .hero-badge::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: block; animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.5; transform:scale(1.3); } }
-  .hero-name { color: var(--navy); }
-  .hero-role { font-family: 'DM Sans', sans-serif; font-size: clamp(1rem, 2vw, 1.2rem); color: var(--blue); font-weight: 500; margin: 12px 0 20px; }
-  .hero-desc { color: var(--gray-text); font-size: 1rem; line-height: 1.8; margin-bottom: 32px; max-width: 480px; }
-  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
-  .hero-stats { display: flex; gap: 32px; }
-  .hero-stat-num { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--navy); }
-  .hero-stat-label { font-size: 0.82rem; color: var(--gray-text); }
+  #hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--paper) 0%, rgba(245,242,235,0.88) 55%, rgba(245,242,235,0.55) 100%); pointer-events: none; }
+  #hero > .container { position: relative; z-index: 1; width: 100%; }
+  .hero-bg-shape { display: none; }
+  .hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 72px; align-items: center; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--card-bg); border: 1px solid var(--line-strong); color: var(--ink); padding: 7px 16px 7px 14px; border-radius: 100px; font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; margin-bottom: 28px; }
+  .hero-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); display: block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; box-shadow: 0 0 0 0 rgba(27,127,92,.5); } 50% { opacity:.7; box-shadow: 0 0 0 6px rgba(27,127,92,0); } }
+  .hero-name { color: var(--ink); }
+  .hero-role { font-family: var(--font-mono); font-size: clamp(0.82rem, 1.4vw, 0.98rem); color: var(--accent); font-weight: 500; margin: 22px 0 22px; letter-spacing: 0.02em; display: flex; align-items: center; gap: 12px; }
+  .hero-role::before { content: ''; width: 36px; height: 2px; background: var(--accent); flex-shrink: 0; }
+  .hero-desc { color: var(--muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 34px; max-width: 520px; }
+  .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 52px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 0; border-top: 1px solid var(--line-strong); }
+  .hero-stats > div { padding: 20px 36px 0 0; margin-right: 36px; border-right: 1px solid var(--line); }
+  .hero-stats > div:last-child { border-right: none; margin-right: 0; }
+  .hero-stat-num { font-family: var(--font-display); font-size: 2.3rem; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -0.04em; }
+  .hero-stat-label { font-family: var(--font-mono); font-size: 0.66rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
   .hero-photo-wrap { display: flex; justify-content: center; align-items: center; position: relative; }
   .hero-photo-card {
-    width: 340px; height: 400px; border-radius: 24px;
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    position: relative; overflow: hidden; box-shadow: 0 32px 80px rgba(11,36,71,0.25);
+    width: 100%; max-width: 380px; aspect-ratio: 4 / 5;
+    border-radius: 190px 190px 28px 28px;
+    background: var(--deep);
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+    position: relative; overflow: hidden; padding-bottom: 36px;
+    box-shadow: 14px 14px 0 var(--accent);
+    isolation: isolate;
   }
-  .hero-photo-initials { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 5rem; font-weight: 800; color: rgba(255,255,255,0.15); position: absolute; }
-  .hero-photo-inner { z-index: 1; text-align: center; }
-  .hero-photo-avatar { width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,0.12); border: 3px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Plus Jakarta Sans',sans-serif; font-size: 2.5rem; font-weight: 800; color: white; }
-  .hero-photo-name { color: white; font-size: 1.1rem; font-weight: 600; }
-  .hero-photo-title { color: rgba(255,255,255,0.65); font-size: 0.82rem; margin-top: 4px; }
-  .hero-photo-tags { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; justify-content: center; padding: 0 20px; }
-  .hero-tag { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.8); font-size: 0.75rem; padding: 4px 12px; border-radius: 100px; }
-  .hero-available { position: absolute; top: -12px; right: -12px; background: white; border-radius: 100px; padding: 8px 16px; font-size: 0.78rem; font-weight: 600; color: var(--accent); border: 2px solid var(--accent); box-shadow: 0 4px 20px var(--shadow); }
+  .hero-photo-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 28%, var(--deep-2) 0%, transparent 62%); z-index: -1; }
+  .hero-photo-initials { font-family: var(--font-display); font-size: 11rem; font-weight: 800; color: rgba(255,255,255,0.05); position: absolute; top: 14%; left: 50%; transform: translateX(-50%); letter-spacing: -0.06em; line-height: 1; z-index: -1; }
+  .hero-photo-inner { text-align: center; width: 100%; }
+  .hero-photo-avatar { width: 150px; height: 150px; border-radius: 50%; background: rgba(255,255,255,0.08); border: 3px solid rgba(255,255,255,0.22); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-family: var(--font-display); font-size: 2.8rem; font-weight: 800; color: white; overflow: hidden; }
+  .hero-photo-name { font-family: var(--font-display); color: white; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+  .hero-photo-title { color: rgba(255,255,255,0.6); font-family: var(--font-mono); font-size: 0.72rem; margin-top: 4px; letter-spacing: 0.03em; }
+  .hero-photo-tags { display: flex; gap: 6px; margin-top: 20px; flex-wrap: wrap; justify-content: center; padding: 0 22px; }
+  .hero-tag { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.85); font-size: 0.72rem; padding: 4px 12px; border-radius: 100px; }
+  .hero-available { position: absolute; top: 56px; left: -26px; background: var(--card-bg); border-radius: 100px; padding: 9px 18px 9px 14px; font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; color: var(--ink); border: 1.5px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); display: flex; align-items: center; gap: 9px; }
+  .hero-available .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--ok); animation: pulse 2s infinite; }
 
   /* ===== ABOUT ===== */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  .about-info p { color: var(--gray-text); line-height: 1.9; margin-bottom: 16px; }
-  .about-details { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
-  .about-detail-row { display: flex; gap: 12px; align-items: flex-start; }
-  .about-detail-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--gray-light); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+  .about-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 80px; align-items: start; }
+  .about-info p { color: var(--ink-2); line-height: 1.9; margin-bottom: 16px; font-size: 1.02rem; }
+  .about-info .section-title { margin-bottom: 24px; }
+  .about-details { display: flex; flex-direction: column; gap: 0; margin-top: 32px; border-top: 1px solid var(--line-strong); }
+  .about-detail-row { display: flex; gap: 16px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .about-detail-icon { width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .detail-label { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: .08em; }
+  .detail-value { font-weight: 500; color: var(--ink); }
   .about-interests { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
-  .interest-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; display: flex; gap: 12px; align-items: center; transition: all var(--transition); }
-  .interest-card:hover { border-color: var(--blue); box-shadow: 0 4px 16px var(--shadow); transform: translateY(-2px); }
-  .interest-icon { font-size: 1.4rem; }
+  .interest-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; transition: all var(--transition); }
+  .interest-card:hover { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px,-2px); }
+  .interest-icon { width: 42px; height: 42px; border-radius: 12px; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: background var(--transition); }
+  .interest-card:hover .interest-icon { background: var(--accent); }
 
   /* ===== EXPERIENCE / TIMELINE ===== */
-  .timeline { position: relative; padding-left: 32px; }
-  .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--border); border-radius: 2px; }
-  .timeline-item { position: relative; margin-bottom: 36px; }
-  .timeline-dot { position: absolute; left: -26px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--blue); border: 3px solid white; box-shadow: 0 0 0 3px rgba(0,101,189,0.2); }
-  .timeline-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; transition: all var(--transition); }
-  .timeline-card:hover { border-color: var(--blue-light); box-shadow: 0 6px 24px var(--shadow); }
+  .exp-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .exp-heading { margin-bottom: 28px; color: var(--ink); font-family: var(--font-mono); font-size: .74rem; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; display: flex; align-items: center; gap: 10px; }
+  .exp-heading .ic { color: var(--accent); font-size: 1.15rem; }
+  .timeline { position: relative; padding-left: 34px; }
+  .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1.5px; background: var(--line-strong); }
+  .timeline-item { position: relative; margin-bottom: 20px; }
+  .timeline-dot { position: absolute; left: -34px; top: 26px; width: 15px; height: 15px; border-radius: 50%; background: var(--paper); border: 2.5px solid var(--accent); }
+  .timeline-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; transition: all var(--transition); }
+  .timeline-card:hover { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px,-2px); }
   .timeline-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 16px; }
-  .timeline-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 1rem; color: var(--text-dark); }
-  .timeline-period { font-size: 0.78rem; background: var(--gray-light); color: var(--gray-text); padding: 3px 10px; border-radius: 100px; white-space: nowrap; font-weight: 500; flex-shrink: 0; }
-  .timeline-org { font-size: 0.88rem; color: var(--blue); font-weight: 500; margin-bottom: 10px; }
-  .timeline-desc { font-size: 0.88rem; color: var(--gray-text); line-height: 1.7; margin-bottom: 12px; }
+  .timeline-title { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink); letter-spacing: -0.02em; line-height: 1.3; }
+  .timeline-period { font-family: var(--font-mono); font-size: 0.68rem; background: var(--paper-2); color: var(--muted); padding: 4px 11px; border-radius: 100px; white-space: nowrap; font-weight: 500; flex-shrink: 0; }
+  .timeline-org { font-size: 0.9rem; color: var(--accent); font-weight: 600; margin-bottom: 12px; }
+  .timeline-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
   .timeline-desc.collapsed { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .timeline-desc-toggle { font-size: 0.78rem; font-weight: 600; color: var(--blue); cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 10px; display: inline-block; }
-  .timeline-desc-toggle:hover { color: var(--navy); }
+  .timeline-desc-toggle { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; color: var(--ink); cursor: pointer; background: none; border: none; border-bottom: 1px solid var(--ink); padding: 0 0 1px; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 5px; }
+  .timeline-desc-toggle:hover { color: var(--accent); border-color: var(--accent); }
   .timeline-skills { display: flex; flex-wrap: wrap; gap: 6px; }
-  .skill-tag { font-size: 0.75rem; background: rgba(0,101,189,0.08); color: var(--blue); padding: 3px 10px; border-radius: 100px; font-weight: 500; }
+  .skill-tag { font-size: 0.74rem; background: var(--accent-soft); color: #A9310F; padding: 4px 11px; border-radius: 100px; font-weight: 500; }
 
   /* ===== PROJECTS ===== */
-  .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
-  .project-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all var(--transition); }
-  .project-card:hover { border-color: var(--blue-light); box-shadow: 0 8px 32px var(--shadow); transform: translateY(-4px); }
-  .project-img { height: 160px; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; position: relative; overflow: hidden; }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+  .project-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column; }
+  .project-card:hover { border-color: var(--ink); box-shadow: 6px 6px 0 var(--ink); transform: translate(-3px,-3px); }
+  .project-img { height: 176px; background: var(--deep); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; color: var(--mint); border-bottom: 1px solid var(--line); }
+  .project-img::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, var(--deep-2), transparent 65%); }
   .project-img img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
-  .project-img .project-emoji-fallback { font-size: 3rem; z-index: 1; }
-  .project-links { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-  .project-link-btn { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; font-weight: 600; padding: 5px 12px; border-radius: 100px; text-decoration: none; transition: all var(--transition); }
-  .project-link-live { background: rgba(0,196,159,0.12); color: #007b63; border: 1px solid rgba(0,196,159,0.3); }
-  .project-link-live:hover { background: var(--accent); color: var(--navy); }
-  .project-link-docs { background: rgba(0,101,189,0.08); color: var(--blue); border: 1px solid rgba(0,101,189,0.2); }
-  .project-link-docs:hover { background: var(--blue); color: white; }
-
-  /* ===== GALLERY ===== */
-  #gallery { }
-  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-  .gallery-item { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all var(--transition); cursor: pointer; }
-  .gallery-item:hover { border-color: var(--blue-light); box-shadow: 0 8px 32px var(--shadow); transform: translateY(-4px); }
-  .gallery-img-wrap { height: 200px; background: var(--gray-light); overflow: hidden; position: relative; }
-  .gallery-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-  .gallery-item:hover .gallery-img-wrap img { transform: scale(1.04); }
-  .gallery-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); }
-  .gallery-info { padding: 16px; }
-  .gallery-caption { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 600; font-size: 0.92rem; color: var(--text-dark); margin-bottom: 6px; line-height: 1.4; }
-  .gallery-year { font-size: 0.78rem; color: var(--gray-text); display: inline-flex; align-items: center; gap: 4px; background: var(--gray-light); padding: 3px 10px; border-radius: 100px; }
-  /* Gallery Lightbox */
-  #gallery-lightbox {
-    display: none; position: fixed; inset: 0; z-index: 8000;
-    background: rgba(5,10,25,0.92); backdrop-filter: blur(8px);
-    align-items: center; justify-content: center;
-  }
-  #gallery-lightbox.open { display: flex; }
-  .lightbox-inner { position: relative; max-width: 800px; width: 95%; animation: lightboxIn 0.22s ease; }
-  @keyframes lightboxIn { from { opacity:0; transform:scale(0.96); } to { opacity:1; transform:scale(1); } }
-  .lightbox-img { width: 100%; max-height: 70vh; object-fit: contain; border-radius: 12px; display: block; background: #0a0a1a; }
-  .lightbox-caption { color: white; font-size: 0.95rem; font-weight: 600; margin-top: 14px; text-align: center; }
-  .lightbox-year { color: rgba(255,255,255,0.55); font-size: 0.82rem; text-align: center; margin-top: 4px; }
-  .lightbox-close { position: absolute; top: -16px; right: -16px; width: 38px; height: 38px; border-radius: 50%; background: white; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--navy); box-shadow: 0 4px 16px rgba(0,0,0,0.3); transition: all var(--transition); }
-  .lightbox-close:hover { background: var(--navy); color: white; }
-  .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.3); color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
-  .lightbox-nav:hover { background: white; color: var(--navy); }
-  .lightbox-prev { left: -52px; }
-  .lightbox-next { right: -52px; }
-  @media (max-width: 700px) { .lightbox-prev { left: -4px; } .lightbox-next { right: -4px; } }
-  .project-badge { position: absolute; top: 12px; right: 12px; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 100px; }
-  .badge-done { background: rgba(0,196,159,0.15); color: #007b63; border: 1px solid rgba(0,196,159,0.3); }
-  .badge-ongoing { background: rgba(0,101,189,0.12); color: var(--blue); border: 1px solid rgba(0,101,189,0.25); }
-  .project-body { padding: 20px; }
-  .project-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 1rem; color: var(--text-dark); margin-bottom: 8px; }
-  .project-desc { font-size: 0.86rem; color: var(--gray-text); line-height: 1.7; margin-bottom: 14px; }
-  .project-tech { display: flex; flex-wrap: wrap; gap: 6px; }
-  .tech-tag { font-size: 0.72rem; background: var(--gray-light); color: var(--gray-text); padding: 3px 9px; border-radius: 100px; font-weight: 500; }
+  .project-img .project-emoji-fallback { font-size: 3.6rem; z-index: 1; display: flex; }
+  .project-links { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .project-link-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 0.76rem; font-weight: 600; padding: 6px 14px; border-radius: 100px; text-decoration: none; transition: all var(--transition); }
+  .project-link-live { background: var(--ink); color: #fff; }
+  .project-link-live:hover { background: var(--accent); }
+  .project-link-docs { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+  .project-link-docs:hover { background: var(--ink); color: #fff; }
+  .project-badge { position: absolute; top: 14px; right: 14px; font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500; padding: 5px 11px; border-radius: 100px; letter-spacing: .04em; text-transform: uppercase; }
+  .badge-done { background: var(--mint); color: #06241B; }
+  .badge-ongoing { background: #FFD9A8; color: #5A2B00; }
+  .project-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+  .project-title { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--ink); margin-bottom: 10px; line-height: 1.3; letter-spacing: -0.02em; }
+  .project-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
+  .project-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .tech-tag { font-family: var(--font-mono); font-size: 0.68rem; background: var(--paper-2); color: var(--ink-2); padding: 4px 10px; border-radius: 6px; font-weight: 500; }
 
   /* ===== SKILLS ===== */
-  .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
-  .skill-category-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
-  .skill-cat-header { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
-  .skill-cat-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
-  .skill-cat-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 1rem; color: var(--text-dark); }
-  .skill-list { display: flex; flex-direction: column; gap: 12px; }
-  .skill-row { display: flex; flex-direction: column; gap: 5px; }
-  .skill-row-top { display: flex; justify-content: space-between; font-size: 0.85rem; }
-  .skill-name { font-weight: 500; color: var(--text-dark); }
-  .skill-pct { color: var(--blue); font-weight: 600; font-size: 0.8rem; }
-  .skill-bar { height: 6px; background: var(--gray-light); border-radius: 100px; overflow: hidden; }
-  .skill-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--accent)); border-radius: 100px; transition: width 1s ease; }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+  .skill-category-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
+  .skill-cat-header { display: flex; gap: 14px; align-items: center; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .skill-cat-icon { width: 46px; height: 46px; border-radius: 13px; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+  .skill-cat-title { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--ink); letter-spacing: -0.02em; }
+  .skill-list { display: flex; flex-direction: column; gap: 18px; }
+  .skill-row { display: flex; flex-direction: column; gap: 8px; }
+  .skill-row-top { display: flex; justify-content: space-between; gap: 12px; font-size: 0.88rem; }
+  .skill-name { font-weight: 500; color: var(--ink); }
+  .skill-pct { font-family: var(--font-mono); color: var(--accent); font-weight: 500; font-size: 0.78rem; }
+  .skill-bar { height: 5px; background: var(--paper-2); border-radius: 100px; overflow: hidden; }
+  .skill-fill { height: 100%; background: var(--ink); border-radius: 100px; transition: width 1.1s cubic-bezier(.2,.7,.2,1); }
 
   /* ===== EDUCATION ===== */
   .education-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .edu-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; gap: 16px; transition: all var(--transition); }
-  .edu-card:hover { border-color: var(--blue-light); box-shadow: 0 6px 24px var(--shadow); }
-  .edu-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
-  .edu-degree { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--text-dark); margin-bottom: 4px; }
-  .edu-school { font-size: 0.88rem; color: var(--blue); font-weight: 500; margin-bottom: 4px; }
-  .edu-period { font-size: 0.78rem; color: var(--gray-text); }
-  .edu-gpa { margin-top: 8px; font-size: 0.82rem; background: var(--gray-light); display: inline-block; padding: 3px 10px; border-radius: 100px; color: var(--gray-text); }
+  .edu-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; gap: 20px; transition: all var(--transition); }
+  .edu-card:hover { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px,-2px); }
+  .edu-icon { width: 56px; height: 56px; border-radius: 16px; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 1.55rem; flex-shrink: 0; overflow: hidden; }
+  .edu-icon:has(img) { background: #fff; border: 1px solid var(--line); }
+  .edu-degree { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; color: var(--ink); margin-bottom: 4px; letter-spacing: -0.02em; line-height: 1.3; }
+  .edu-school { font-size: 0.92rem; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+  .edu-period { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+  .edu-gpa { margin-top: 12px; font-family: var(--font-mono); font-size: 0.72rem; background: var(--paper-2); display: inline-block; padding: 4px 12px; border-radius: 100px; color: var(--ink-2); }
 
   /* ===== CERTIFICATIONS ===== */
-  .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-  .cert-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all var(--transition); }
-  .cert-card:hover { border-color: var(--blue-light); box-shadow: 0 4px 16px var(--shadow); }
-  .cert-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
-  .cert-name { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 0.9rem; color: var(--text-dark); margin-bottom: 4px; }
-  .cert-issuer { font-size: 0.82rem; color: var(--blue); font-weight: 500; }
-  .cert-year { font-size: 0.76rem; color: var(--gray-text); margin-top: 4px; }
+  .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; }
+  .cert-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; gap: 18px; transition: all var(--transition); }
+  .cert-card:hover { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px,-2px); }
+  .cert-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0; }
+  .cert-name { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--ink); margin-bottom: 6px; line-height: 1.35; letter-spacing: -0.015em; }
+  .cert-issuer { font-size: 0.86rem; color: var(--accent); font-weight: 600; }
+  .cert-year { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-top: 6px; }
 
-  /* ===== CONTACT ===== */
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-  .contact-info h2 { margin-bottom: 12px; }
-  .contact-info p { color: var(--gray-text); margin-bottom: 32px; }
-  .contact-items { display: flex; flex-direction: column; gap: 16px; }
-  .contact-item { display: flex; gap: 14px; align-items: center; text-decoration: none; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px; transition: all var(--transition); }
-  .contact-item:hover { border-color: var(--blue); box-shadow: 0 4px 16px var(--shadow); transform: translateX(4px); }
-  .contact-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
-  .contact-label { font-size: 0.75rem; color: var(--gray-text); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
-  .contact-value { font-size: 0.9rem; font-weight: 600; color: var(--text-dark); }
-  .contact-cta { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); border-radius: var(--radius); padding: 36px; color: white; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
-  .contact-cta h3 { color: white; font-size: 1.4rem; }
-  .contact-cta p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+  /* ===== RESEARCH ===== */
+  .research-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px,1fr)); gap: 20px; }
+  .research-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; transition: all var(--transition); }
+  .research-card:hover { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px,-2px); }
+  .research-header { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
+  .research-title { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; color: var(--ink); line-height: 1.45; letter-spacing: -0.015em; }
+  .research-rank { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; padding: 4px 12px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
+  .rank-scopus { background: rgba(213,64,26,0.12); color: #A9310F; border: 1px solid rgba(213,64,26,0.3); }
+  .rank-sinta1 { background: rgba(217,119,6,0.12); color: #92400E; border: 1px solid rgba(217,119,6,0.3); }
+  .rank-sinta2 { background: rgba(27,127,92,0.12); color: #146146; border: 1px solid rgba(27,127,92,0.3); }
+  .rank-sinta3 { background: rgba(37,99,235,0.1); color: #1D4ED8; border: 1px solid rgba(37,99,235,0.25); }
+  .rank-sinta4 { background: rgba(124,58,237,0.1); color: #6D28D9; border: 1px solid rgba(124,58,237,0.25); }
+  .rank-sinta5, .rank-sinta6 { background: var(--paper-2); color: var(--muted); border: 1px solid var(--line); }
+  .research-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .research-meta-item { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .research-link { display: inline-flex; align-items: center; gap: 7px; font-size: 0.84rem; font-weight: 600; color: var(--ink); text-decoration: none; margin-top: 4px; padding: 2px 0; border-bottom: 1.5px solid var(--ink); }
+  .research-link:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ===== GALLERY ===== */
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; }
+  .gallery-item { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: all var(--transition); cursor: pointer; }
+  .gallery-item:hover { border-color: var(--ink); box-shadow: 6px 6px 0 var(--ink); transform: translate(-3px,-3px); }
+  .gallery-img-wrap { height: 220px; background: var(--paper-2); overflow: hidden; position: relative; }
+  .gallery-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .gallery-item:hover .gallery-img-wrap img { transform: scale(1.05); }
+  .gallery-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.6rem; background: var(--deep); color: var(--mint); }
+  .gallery-info { padding: 18px 20px 20px; }
+  .gallery-caption { font-family: var(--font-display); font-weight: 600; font-size: 0.98rem; color: var(--ink); margin-bottom: 10px; line-height: 1.4; letter-spacing: -0.01em; }
+  .gallery-year { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; background: var(--paper-2); padding: 4px 11px; border-radius: 100px; }
+  #gallery-lightbox { display: none; position: fixed; inset: 0; z-index: 8000; background: rgba(10,14,13,0.94); backdrop-filter: blur(8px); align-items: center; justify-content: center; }
+  #gallery-lightbox.open { display: flex; }
+  .lightbox-inner { position: relative; max-width: 860px; width: 92%; animation: lightboxIn 0.22s ease; }
+  @keyframes lightboxIn { from { opacity:0; transform:scale(0.96); } to { opacity:1; transform:scale(1); } }
+  .lightbox-img { width: 100%; max-height: 72vh; object-fit: contain; border-radius: 14px; display: block; background: #0a0f0e; }
+  .lightbox-caption { font-family: var(--font-display); color: white; font-size: 1.05rem; font-weight: 600; margin-top: 16px; text-align: center; }
+  .lightbox-year { color: rgba(255,255,255,0.55); font-family: var(--font-mono); font-size: 0.74rem; text-align: center; margin-top: 6px; }
+  .lightbox-close { position: absolute; top: -18px; right: -18px; width: 40px; height: 40px; border-radius: 50%; background: var(--paper); border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--ink); box-shadow: 0 4px 16px rgba(0,0,0,0.3); transition: all var(--transition); }
+  .lightbox-close:hover { background: var(--accent); color: white; }
+  .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.3); color: white; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+  .lightbox-nav:hover { background: var(--paper); color: var(--ink); }
+  .lightbox-prev { left: -60px; }
+  .lightbox-next { right: -60px; }
+  @media (max-width: 1000px) { .lightbox-prev { left: 8px; } .lightbox-next { right: 8px; } .lightbox-close { top: -50px; right: 0; } }
+
+  /* ===== CONTACT (dark) ===== */
+  #contact { background: var(--deep); color: #fff; overflow: hidden; }
+  #contact::before { content: ''; position: absolute; width: 640px; height: 640px; border-radius: 50%; right: -200px; top: -240px; background: radial-gradient(circle, rgba(213,64,26,0.28), transparent 68%); pointer-events: none; }
+  #contact .container { position: relative; }
+  #contact .section-label { color: var(--mint); }
+  #contact .section-label span { color: #fff; }
+  #contact .section-label::after { background: rgba(255,255,255,0.25); }
+  #contact h2 { color: #fff; }
+  #contact p { color: rgba(255,255,255,0.68); }
+  .contact-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 72px; align-items: start; }
+  .contact-items { display: flex; flex-direction: column; gap: 12px; }
+  .contact-item { display: flex; gap: 16px; align-items: center; text-decoration: none; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); padding: 16px 20px; transition: all var(--transition); }
+  .contact-item:hover { border-color: var(--mint); background: rgba(255,255,255,0.09); transform: translateX(6px); }
+  .contact-icon { width: 46px; height: 46px; border-radius: 13px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; background: rgba(79,209,165,0.14) !important; color: var(--mint); }
+  .contact-label { font-family: var(--font-mono); font-size: 0.66rem; color: rgba(255,255,255,0.5); font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; }
+  .contact-value { font-size: 0.98rem; font-weight: 600; color: #fff; word-break: break-word; }
+  .contact-cta { background: var(--paper); border-radius: 26px; padding: 44px; color: var(--ink); display: flex; flex-direction: column; align-items: flex-start; gap: 20px; box-shadow: 12px 12px 0 var(--accent); }
+  .contact-cta-icon { width: 60px; height: 60px; border-radius: 18px; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
+  .contact-cta h3 { color: var(--ink); font-size: 1.8rem; line-height: 1.15; letter-spacing: -0.03em; font-weight: 700; }
+  #contact .contact-cta p { color: var(--ink-2); font-size: 0.98rem; margin: 0; }
+  .btn-ghost-dark { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-ghost-dark:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+  #visitor-count { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: .7rem; color: var(--muted); margin-top: 6px; }
 
   /* ===== FOOTER ===== */
-  footer { background: var(--navy); color: rgba(255,255,255,0.6); text-align: center; padding: 28px 24px; font-size: 0.85rem; }
-  footer span { color: var(--accent); }
-  footer .footer-rights { color: #ffffff; }
+  footer { background: var(--deep); color: rgba(255,255,255,0.55); text-align: center; padding: 30px 24px; font-size: 0.82rem; border-top: 1px solid rgba(255,255,255,0.1); }
+  footer p { color: rgba(255,255,255,0.55); }
+  footer span { color: var(--mint); }
+  footer .footer-rights { color: rgba(255,255,255,0.7); }
+  footer .ic { color: var(--accent); font-size: 1em; margin: 0 2px; }
 
-  /* ===== ADMIN FAB ===== */
-  #admin-fab {
-    position: fixed; bottom: 28px; right: 28px; z-index: 2000;
-    width: 52px; height: 52px; border-radius: 50%;
-    background: var(--navy); color: white; border: none;
-    font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 4px 20px rgba(11,36,71,0.4);
-    transition: all var(--transition);
+  .scroll-to-top {
+    position: fixed; bottom: 28px; right: 28px; z-index: 1000;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--ink); border: none; color: #fff;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 1.15rem; box-shadow: 0 6px 24px rgba(20,23,28,0.3);
+    transition: all var(--transition); opacity: 0; pointer-events: none; transform: translateY(10px);
   }
-  #admin-fab:hover { transform: scale(1.08); background: var(--navy-mid); }
+  .scroll-to-top.visible { opacity: 1; pointer-events: all; transform: none; }
+  .scroll-to-top:hover { background: var(--accent); }
 
-  /* ===== ADMIN AUTH OVERLAY (pop-up kecil untuk login) ===== */
-  #admin-overlay {
-    display: none; position: fixed; inset: 0; z-index: 3000;
-    background: rgba(11,36,71,0.55); backdrop-filter: blur(6px);
-    align-items: center; justify-content: center;
-  }
+  /* ===== MOBILE NAV ===== */
+  #mobile-menu { display: none; position: fixed; inset: 0; z-index: 999; background: rgba(245,242,235,0.98); padding: 92px 24px 40px; flex-direction: column; align-items: stretch; gap: 2px; backdrop-filter: blur(8px); overflow-y: auto; }
+  #mobile-menu.open { display: flex; }
+  #mobile-menu a { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); text-decoration: none; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  #mobile-menu a:hover { color: var(--accent); }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.7,.2,1), border-color .22s, box-shadow .22s; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .project-card.fade-up.visible:hover, .gallery-item.fade-up.visible:hover { transform: translate(-3px,-3px); }
+  .edu-card.fade-up.visible:hover, .cert-card.fade-up.visible:hover, .research-card.fade-up.visible:hover { transform: translate(-2px,-2px); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .fade-up { opacity: 1; transform: none; } }
+
+  /* ===== GREETING OVERLAY ===== */
+  #greeting-overlay { position: fixed; inset: 0; z-index: 9000; background: rgba(15,31,29,0.78); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; animation: greetFadeIn 0.5s ease; }
+  @keyframes greetFadeIn { from { opacity:0; } to { opacity:1; } }
+  .greeting-card { background: var(--paper); border-radius: 28px; padding: 48px 40px 40px; max-width: 480px; width: 90%; box-shadow: 12px 12px 0 var(--accent); text-align: center; animation: greetSlideUp 0.5s cubic-bezier(.34,1.56,.64,1); position: relative; overflow: hidden; }
+  @keyframes greetSlideUp { from { opacity:0; transform:translateY(40px) scale(0.95); } to { opacity:1; transform:translateY(0) scale(1); } }
+  .greeting-accent { position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--accent); }
+  .greeting-time { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 12px; }
+  .greeting-wave { width: 68px; height: 68px; border-radius: 50%; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 20px; animation: wave 1.6s ease infinite; transform-origin: 70% 70%; }
+  @keyframes wave { 0%,100% {transform:rotate(0)} 20% {transform:rotate(-14deg)} 40% {transform:rotate(14deg)} 60% {transform:rotate(-8deg)} 80% {transform:rotate(8deg)} }
+  .greeting-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--ink); margin-bottom: 14px; line-height: 1.2; letter-spacing: -0.03em; }
+  .greeting-desc { font-size: 0.92rem; color: var(--muted); line-height: 1.8; margin-bottom: 28px; }
+  .greeting-btn { background: var(--ink); color: white; border: none; border-radius: 100px; padding: 14px 32px; font-family: var(--font-body); font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: all var(--transition); display: inline-flex; align-items: center; gap: 8px; }
+  .greeting-btn:hover { background: var(--accent); transform: translateY(-2px); }
+
+  /* ==========================================================
+     ADMIN / CMS  (restyled to match)
+     ========================================================== */
+  #admin-overlay { display: none; position: fixed; inset: 0; z-index: 3000; background: rgba(15,31,29,0.6); backdrop-filter: blur(6px); align-items: center; justify-content: center; }
   #admin-overlay.open { display: flex; }
-  #admin-auth-box {
-    background: white; border-radius: var(--radius); width: 360px;
-    box-shadow: 0 24px 64px rgba(11,36,71,0.28);
-    animation: slideIn 0.2s ease; overflow: hidden;
-  }
-  .auth-box-header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-  .auth-box-header h3 { font-family: 'Plus Jakarta Sans',sans-serif; color: var(--navy); font-size: 1rem; margin: 0; }
-  .auth-close { background: none; border: none; cursor: pointer; font-size: 1.1rem; color: var(--gray-text); padding: 4px 8px; border-radius: 6px; }
-  .auth-close:hover { background: var(--gray-light); }
+  #admin-auth-box { background: var(--paper); border-radius: 22px; width: 380px; max-width: 92vw; box-shadow: 10px 10px 0 var(--accent); animation: slideIn 0.2s ease; overflow: hidden; }
+  .auth-box-header { padding: 20px 24px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; }
+  .auth-box-header h3 { font-family: var(--font-display); color: var(--ink); font-size: 1.05rem; margin: 0; display: flex; align-items: center; gap: 8px; }
+  .auth-close { background: none; border: none; cursor: pointer; font-size: 1.1rem; color: var(--muted); padding: 6px; border-radius: 8px; display: flex; }
+  .auth-close:hover { background: var(--paper-2); color: var(--ink); }
   .auth-box-body { padding: 28px 24px; }
   .auth-screen { text-align: center; }
-  .auth-screen h3 { margin-bottom: 20px; font-size: 1rem; color: var(--text-dark); }
+  .auth-lock { width: 56px; height: 56px; border-radius: 50%; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 18px; }
+  .auth-screen h3 { margin-bottom: 20px; font-size: 1.05rem; color: var(--ink); }
+  .auth-hint { font-family: var(--font-mono); font-size: .66rem; color: var(--muted); margin-top: 16px; }
 
-  /* ===== ADMIN FULLSCREEN PAGE ===== */
-  #admin-fullscreen {
-    display: none; position: fixed; inset: 0; z-index: 4000;
-    background: #F2F5FA; overflow-y: auto;
-    animation: fadeInFull 0.25s ease;
-  }
+  #admin-fullscreen { display: none; position: fixed; inset: 0; z-index: 4000; background: var(--paper); overflow-y: auto; animation: fadeInFull 0.25s ease; }
   #admin-fullscreen.open { display: block; }
+  #admin-fullscreen.open.preview-hidden { display: none; }
   @keyframes fadeInFull { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
   @keyframes slideIn { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-  .admin-topbar {
-    background: var(--navy); padding: 0 32px; height: 60px;
-    display: flex; align-items: center; justify-content: space-between;
-    position: sticky; top: 0; z-index: 10;
-    box-shadow: 0 2px 16px rgba(11,36,71,0.25);
-  }
-  .admin-topbar-left { display: flex; align-items: center; gap: 16px; }
-  .admin-topbar-logo { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 800; color: white; font-size: 1rem; }
+  .admin-topbar { background: var(--ink); padding: 0 28px; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; gap: 12px; }
+  .admin-topbar-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .admin-topbar-logo { font-family: var(--font-display); font-weight: 800; color: white; font-size: 1.05rem; letter-spacing: -0.03em; white-space: nowrap; }
   .admin-topbar-logo span { color: var(--accent); }
-  .admin-topbar-badge { background: rgba(0,196,159,0.18); border: 1px solid rgba(0,196,159,0.35); color: #4eebd0; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 100px; }
-  .admin-topbar-right { display: flex; align-items: center; gap: 10px; }
-  .admin-btn-cancel { background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.85); font-family: 'DM Sans',sans-serif; font-weight: 600; font-size: 0.82rem; padding: 7px 18px; border-radius: 7px; cursor: pointer; transition: all var(--transition); }
-  .admin-btn-cancel:hover { background: rgba(255,255,255,0.18); }
-  .admin-btn-save-main { background: var(--accent); border: none; color: var(--navy); font-family: 'DM Sans',sans-serif; font-weight: 700; font-size: 0.82rem; padding: 7px 20px; border-radius: 7px; cursor: pointer; transition: all var(--transition); }
-  .admin-btn-save-main:hover { background: #00a885; transform: translateY(-1px); }
+  .admin-topbar-badge { background: rgba(79,209,165,0.16); border: 1px solid rgba(79,209,165,0.4); color: var(--mint); font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500; padding: 4px 11px; border-radius: 100px; white-space: nowrap; }
+  .admin-topbar-right { display: flex; align-items: center; gap: 8px; }
+  .admin-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.2); margin: 0 4px; }
+  .admin-btn-view { background: #fff; border: none; color: var(--ink); font-family: var(--font-body); font-weight: 700; font-size: 0.82rem; padding: 9px 18px; border-radius: 100px; cursor: pointer; transition: all var(--transition); display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .admin-btn-view:hover { background: var(--mint); transform: translateY(-1px); }
+  .admin-btn-icon { background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.25); color: #fff; width: 38px; height: 38px; border-radius: 50%; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; transition: all var(--transition); }
+  .admin-btn-icon:hover { background: rgba(255,255,255,0.22); }
+  .admin-btn-cancel { background: transparent; border: 1.5px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.9); font-family: var(--font-body); font-weight: 600; font-size: 0.82rem; padding: 8px 16px; border-radius: 100px; cursor: pointer; transition: all var(--transition); display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+  .admin-btn-cancel:hover { background: rgba(255,255,255,0.14); }
+  .admin-btn-save-main { background: var(--accent); border: none; color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 0.82rem; padding: 9px 20px; border-radius: 100px; cursor: pointer; transition: all var(--transition); display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+  .admin-btn-save-main:hover { background: #E8532B; transform: translateY(-1px); }
 
-  .admin-layout { display: grid; grid-template-columns: 220px 1fr; min-height: calc(100vh - 60px); }
-  .admin-sidebar { background: white; border-right: 1px solid var(--border); padding: 24px 12px; }
-  .admin-sidebar-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gray-mid); padding: 0 12px; margin-bottom: 8px; margin-top: 4px; }
-  .admin-sidenav-item { display: flex; align-items: center; gap: 10px; width: 100%; padding: 9px 12px; border-radius: 8px; border: none; background: none; font-family: 'DM Sans',sans-serif; font-size: 0.88rem; font-weight: 500; color: var(--gray-text); cursor: pointer; transition: all var(--transition); text-align: left; }
-  .admin-sidenav-item:hover { background: var(--gray-light); color: var(--text-dark); }
-  .admin-sidenav-item.active { background: rgba(0,101,189,0.1); color: var(--blue); font-weight: 600; }
-  .admin-sidenav-item .nav-icon { font-size: 1rem; width: 20px; text-align: center; }
+  .admin-layout { display: grid; grid-template-columns: 240px 1fr; min-height: calc(100vh - 64px); }
+  .admin-sidebar { background: var(--card-bg); border-right: 1px solid var(--line); padding: 24px 14px; }
+  .admin-sidebar-label { font-family: var(--font-mono); font-size: 0.64rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); padding: 0 12px; margin-bottom: 8px; margin-top: 4px; }
+  .admin-sidenav-item { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; border-radius: 10px; border: none; background: none; font-family: var(--font-body); font-size: 0.9rem; font-weight: 500; color: var(--muted); cursor: pointer; transition: all var(--transition); text-align: left; }
+  .admin-sidenav-item:hover { background: var(--paper-2); color: var(--ink); }
+  .admin-sidenav-item.active { background: var(--ink); color: #fff; font-weight: 600; }
+  .admin-sidenav-item .nav-icon { font-size: 1.1rem; display: flex; }
   .admin-sidenav-item .unsaved-dot { width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; margin-left: auto; display: none; }
   .admin-sidenav-item.dirty .unsaved-dot { display: block; }
 
-  .admin-content { padding: 32px 40px; max-width: 900px; }
-  .admin-content-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
-  .admin-content-sub { font-size: 0.85rem; color: var(--gray-text); margin-bottom: 28px; }
-
+  .admin-content { padding: 36px 44px 80px; max-width: 940px; }
+  .admin-content-title { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; letter-spacing: -0.03em; display: flex; align-items: center; gap: 10px; }
+  .admin-content-title .ic { color: var(--accent); }
+  .admin-content-sub { font-size: 0.88rem; color: var(--muted); margin-bottom: 28px; }
   .admin-form-row { margin-bottom: 16px; }
-  .admin-form-row label { display: block; font-size: 0.77rem; font-weight: 700; color: var(--gray-text); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .admin-input { width: 100%; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-family: 'DM Sans',sans-serif; font-size: 0.88rem; color: var(--text-dark); transition: border-color var(--transition); background: white; }
-  .admin-input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,101,189,0.1); }
+  .admin-form-row label { display: block; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; color: var(--muted); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .admin-input { width: 100%; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.9rem; color: var(--ink); transition: border-color var(--transition), box-shadow var(--transition); background: #fff; }
+  .admin-input:focus { outline: none; border-color: var(--ink); box-shadow: 3px 3px 0 var(--ink); }
   .admin-textarea { resize: vertical; min-height: 90px; }
   .admin-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-  .admin-list-item { display: flex; justify-content: space-between; align-items: center; background: var(--gray-light); border-radius: var(--radius-sm); padding: 11px 14px; }
-  .admin-list-item-title { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); }
-  .admin-list-item-sub { font-size: 0.75rem; color: var(--gray-text); }
-  .admin-item-actions { display: flex; gap: 4px; }
-  .admin-item-btn { padding: 4px 10px; border-radius: 5px; border: none; font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: 'DM Sans',sans-serif; transition: all var(--transition); }
-  .btn-edit-item { background: rgba(0,101,189,0.1); color: var(--blue); }
-  .btn-edit-item:hover { background: var(--blue); color: white; }
-  .btn-delete-item { background: rgba(220,38,38,0.1); color: #dc2626; }
-  .btn-delete-item:hover { background: #dc2626; color: white; }
-  .admin-save { padding: 10px 24px; border-radius: var(--radius-sm); border: none; background: var(--navy); color: white; font-family: 'DM Sans',sans-serif; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all var(--transition); }
-  .admin-save:hover { background: var(--navy-mid); }
-  .admin-status { font-size: 0.8rem; color: var(--accent); margin-top: 8px; font-weight: 500; display: none; }
-  .admin-form-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
-  .admin-form-card-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--text-dark); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .admin-list-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 16px; }
+  .admin-list-item-title { font-size: 0.9rem; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+  .admin-list-item-title .ic { color: var(--accent); }
+  .admin-list-item-sub { font-size: 0.78rem; color: var(--muted); }
+  .admin-item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .admin-item-btn { padding: 6px 13px; border-radius: 100px; border: none; font-size: 0.76rem; font-weight: 600; cursor: pointer; font-family: var(--font-body); transition: all var(--transition); display: inline-flex; align-items: center; gap: 6px; }
+  .btn-edit-item { background: var(--paper-2); color: var(--ink); }
+  .btn-edit-item:hover { background: var(--ink); color: white; }
+  .btn-delete-item { background: rgba(213,64,26,0.1); color: #B8340F; }
+  .btn-delete-item:hover { background: var(--accent); color: white; }
+  .admin-save { padding: 11px 24px; border-radius: 100px; border: none; background: var(--ink); color: white; font-family: var(--font-body); font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all var(--transition); display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+  .admin-save:hover { background: var(--accent); }
+  .admin-status { font-size: 0.82rem; color: var(--ok); margin-top: 10px; font-weight: 600; display: none; align-items: center; gap: 7px; }
+  .admin-status[style*="block"] { display: flex !important; }
+  .admin-form-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
+  .admin-form-card-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 9px; }
+  .admin-form-card-title .ic { color: var(--accent); }
+  .admin-content h4 { display: flex; align-items: center; gap: 9px; }
+  .admin-content h4 .ic { color: var(--accent); }
+
+  /* icon picker */
+  .icon-picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 6px; }
+  .icon-opt { aspect-ratio: 1; border: 1.5px solid var(--line); background: #fff; color: var(--ink-2); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; transition: all var(--transition); }
+  .icon-opt:hover { border-color: var(--ink); color: var(--ink); }
+  .icon-opt.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .icon-preview-box { width: 56px; height: 56px; border-radius: 16px; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; font-size: 1.5rem; }
+
+  /* preview-mode floating bar */
+  #preview-bar { display: none; position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 4500; background: var(--ink); color: #fff; border-radius: 100px; padding: 8px 8px 8px 20px; align-items: center; gap: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.12); animation: slideUpBar .3s cubic-bezier(.34,1.56,.64,1); max-width: calc(100vw - 24px); }
+  body.previewing #preview-bar { display: flex; }
+  body.previewing .scroll-to-top { bottom: 88px; }
+  #preview-bar .pv-label { font-family: var(--font-mono); font-size: 0.72rem; display: flex; align-items: center; gap: 9px; color: rgba(255,255,255,0.85); white-space: nowrap; }
+  #preview-bar .pv-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint); animation: pulse 2s infinite; }
+  #preview-bar button { background: var(--accent); color: #fff; border: none; border-radius: 100px; padding: 10px 20px; font-family: var(--font-body); font-weight: 700; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all var(--transition); white-space: nowrap; }
+  #preview-bar button:hover { background: #E8532B; }
+  @keyframes slideUpBar { from { opacity:0; transform: translate(-50%, 24px); } to { opacity:1; transform: translate(-50%, 0); } }
 
   /* ===== CONFIRM MODAL ===== */
-  #confirm-modal {
-    display: none; position: fixed; inset: 0; z-index: 5000;
-    background: rgba(11,36,71,0.5); backdrop-filter: blur(4px);
-    align-items: center; justify-content: center;
-  }
+  #confirm-modal { display: none; position: fixed; inset: 0; z-index: 5000; background: rgba(15,31,29,0.55); backdrop-filter: blur(4px); align-items: center; justify-content: center; }
   #confirm-modal.open { display: flex; }
-  .confirm-box {
-    background: white; border-radius: var(--radius); padding: 32px 28px;
-    width: 380px; box-shadow: 0 20px 60px rgba(11,36,71,0.25);
-    animation: slideIn 0.18s ease; text-align: center;
-  }
-  .confirm-icon { font-size: 2.4rem; margin-bottom: 12px; }
-  .confirm-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
-  .confirm-desc { font-size: 0.88rem; color: var(--gray-text); margin-bottom: 24px; line-height: 1.6; }
+  .confirm-box { background: var(--paper); border-radius: 24px; padding: 36px 30px; width: 400px; max-width: 92vw; box-shadow: 10px 10px 0 var(--accent); animation: slideIn 0.18s ease; text-align: center; }
+  .confirm-icon { font-size: 2.6rem; margin-bottom: 14px; color: var(--accent); display: flex; justify-content: center; }
+  .confirm-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .confirm-desc { font-size: 0.9rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
   .confirm-actions { display: flex; gap: 10px; justify-content: center; }
 
-  /* ===== SUCCESS TOAST ===== */
-  #success-toast {
-    display: none; position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
-    z-index: 6000; background: white; border-radius: 100px;
-    padding: 14px 28px; box-shadow: 0 8px 40px rgba(11,36,71,0.18);
-    border: 1.5px solid rgba(0,196,159,0.4);
-    font-family: 'DM Sans',sans-serif; font-size: 0.9rem; font-weight: 600;
-    color: var(--text-dark); gap: 10px; align-items: center;
-    animation: toastIn 0.3s cubic-bezier(.34,1.56,.64,1);
-  }
+  /* ===== TOAST ===== */
+  #success-toast { display: none; position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 6000; background: var(--ink); border-radius: 100px; padding: 14px 26px; box-shadow: 0 12px 40px rgba(20,23,28,0.3); font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: #fff; gap: 10px; align-items: center; animation: toastIn 0.3s cubic-bezier(.34,1.56,.64,1); }
   #success-toast.open { display: flex; }
   @keyframes toastIn { from { opacity:0; transform:translateX(-50%) translateY(20px) scale(0.95); } to { opacity:1; transform:translateX(-50%) translateY(0) scale(1); } }
-  .toast-icon { font-size: 1.1rem; }
-
-
-
-  /* ===== GREETING OVERLAY ===== */
-  #greeting-overlay {
-    position: fixed; inset: 0; z-index: 9000;
-    background: rgba(11,36,71,0.72); backdrop-filter: blur(8px);
-    display: flex; align-items: center; justify-content: center;
-    animation: greetFadeIn 0.5s ease;
-  }
-  @keyframes greetFadeIn { from { opacity:0; } to { opacity:1; } }
-  .greeting-card {
-    background: white; border-radius: 20px; padding: 44px 40px; max-width: 480px; width: 90%;
-    box-shadow: 0 32px 80px rgba(11,36,71,0.3); text-align: center;
-    animation: greetSlideUp 0.5s cubic-bezier(.34,1.56,.64,1);
-    position: relative; overflow: hidden;
-  }
-  @keyframes greetSlideUp { from { opacity:0; transform:translateY(40px) scale(0.95); } to { opacity:1; transform:translateY(0) scale(1); } }
-  .greeting-accent { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--navy), var(--blue), var(--accent)); }
-  .greeting-time { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 10px; }
-  .greeting-wave { font-size: 2.8rem; display: block; margin-bottom: 12px; animation: wave 1.5s ease infinite; transform-origin: 70% 70%; }
-  @keyframes wave { 0%,100% {transform:rotate(0)} 20% {transform:rotate(-15deg)} 40% {transform:rotate(15deg)} 60% {transform:rotate(-10deg)} 80% {transform:rotate(10deg)} }
-  .greeting-title { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 1.35rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
-  .greeting-title span { color: var(--blue); }
-  .greeting-desc { font-size: 0.88rem; color: var(--gray-text); line-height: 1.8; margin-bottom: 28px; }
-  .greeting-btn { background: var(--navy); color: white; border: none; border-radius: 10px; padding: 12px 32px; font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all var(--transition); }
-  .greeting-btn:hover { background: var(--navy-mid); transform: translateY(-1px); }
+  .toast-icon { font-size: 1.2rem; color: var(--mint); display: flex; }
 
   /* ===== PHOTO CROP MODAL ===== */
-  #photo-crop-modal {
-    display: none; position: fixed; inset: 0; z-index: 7000;
-    background: rgba(11,36,71,0.82); backdrop-filter: blur(6px);
-    align-items: center; justify-content: center;
-  }
+  #photo-crop-modal { display: none; position: fixed; inset: 0; z-index: 7000; background: rgba(15,31,29,0.85); backdrop-filter: blur(6px); align-items: center; justify-content: center; }
   #photo-crop-modal.open { display: flex; }
-  .crop-box { background: white; border-radius: var(--radius); padding: 28px; width: 480px; max-width: 96vw; box-shadow: 0 20px 60px rgba(11,36,71,0.3); }
-  .crop-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 1rem; color: var(--text-dark); margin-bottom: 6px; }
-  .crop-subtitle { font-size: 0.78rem; color: var(--gray-text); margin-bottom: 14px; }
-  .crop-stage-wrap {
-    position: relative; width: 100%; padding-bottom: 75%; background: #1a1a2e;
-    border-radius: 10px; overflow: hidden; margin-bottom: 14px; cursor: crosshair;
-    user-select: none;
-  }
-  #crop-bg-img {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: contain; pointer-events: none; opacity: 0.45;
-  }
-  #crop-selection {
-    position: absolute; border: 2px solid white;
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.48);
-    cursor: move; box-sizing: border-box;
-    border-radius: 50%;
-  }
-  .crop-sel-handle {
-    position: absolute; width: 14px; height: 14px;
-    background: white; border-radius: 50%; border: 2px solid var(--blue);
-    transform: translate(-50%,-50%);
-  }
+  .crop-box { background: var(--paper); border-radius: 22px; padding: 28px; width: 480px; max-width: 96vw; box-shadow: 10px 10px 0 var(--accent); }
+  .crop-title { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink); margin-bottom: 6px; display: flex; align-items: center; gap: 9px; }
+  .crop-title .ic { color: var(--accent); }
+  .crop-subtitle { font-size: 0.8rem; color: var(--muted); margin-bottom: 14px; }
+  .crop-stage-wrap { position: relative; width: 100%; padding-bottom: 75%; background: #101615; border-radius: 12px; overflow: hidden; margin-bottom: 14px; cursor: crosshair; user-select: none; }
+  #crop-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; opacity: 0.45; }
+  #crop-selection { position: absolute; border: 2px solid white; box-shadow: 0 0 0 9999px rgba(0,0,0,0.48); cursor: move; box-sizing: border-box; border-radius: 50%; }
+  .crop-sel-handle { position: absolute; width: 14px; height: 14px; background: white; border-radius: 50%; border: 2px solid var(--accent); transform: translate(-50%,-50%); }
   .crop-sel-nw { top:0; left:0; cursor: nwse-resize; }
   .crop-sel-ne { top:0; left:100%; cursor: nesw-resize; }
   .crop-sel-sw { top:100%; left:0; cursor: nesw-resize; }
   .crop-sel-se { top:100%; left:100%; cursor: nwse-resize; }
   .crop-zoom-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-  .crop-zoom-row label { font-size: 0.75rem; font-weight: 700; color: var(--gray-text); text-transform: uppercase; letter-spacing:.5px; white-space:nowrap; }
-  .crop-zoom-row input[type=range] { flex: 1; accent-color: var(--blue); }
-  .crop-preview-circle {
-    width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--blue);
-    overflow: hidden; flex-shrink: 0; background: var(--navy);
-  }
+  .crop-zoom-row label { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing:.08em; white-space:nowrap; }
+  .crop-zoom-row input[type=range] { flex: 1; accent-color: var(--accent); }
+  .crop-preview-circle { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--accent); overflow: hidden; flex-shrink: 0; background: var(--ink); }
   #crop-preview-canvas { width: 64px; height: 64px; display: block; }
   .crop-actions { display: flex; gap: 8px; }
 
-  /* ===== RESEARCH ===== */
-  .research-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 20px; }
-  .research-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; transition: all var(--transition); }
-  .research-card:hover { border-color: var(--blue-light); box-shadow: 0 6px 24px var(--shadow); transform: translateY(-3px); }
-  .research-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-  .research-title { font-family: 'Plus Jakarta Sans',sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--text-dark); line-height: 1.4; }
-  .research-rank { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
-  .rank-scopus { background: rgba(239,68,68,0.1); color: #dc2626; border: 1px solid rgba(239,68,68,0.25); }
-  .rank-sinta1 { background: rgba(245,158,11,0.12); color: #b45309; border: 1px solid rgba(245,158,11,0.3); }
-  .rank-sinta2 { background: rgba(16,185,129,0.1); color: #059669; border: 1px solid rgba(16,185,129,0.25); }
-  .rank-sinta3 { background: rgba(59,154,225,0.1); color: var(--blue); border: 1px solid rgba(59,154,225,0.25); }
-  .rank-sinta4 { background: rgba(87,108,188,0.1); color: var(--accent-2); border: 1px solid rgba(87,108,188,0.25); }
-  .rank-sinta5 { background: rgba(107,120,150,0.1); color: var(--gray-text); border: 1px solid var(--border); }
-  .rank-sinta6 { background: rgba(107,120,150,0.08); color: var(--gray-text); border: 1px solid var(--border); }
-  .research-meta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
-  .research-meta-item { font-size: 0.78rem; color: var(--gray-text); display: flex; align-items: center; gap: 4px; }
-  .research-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 600; color: var(--blue); text-decoration: none; margin-top: 4px; padding: 4px 0; }
-  .research-link:hover { color: var(--navy); }
-
-  /* ===== ANALYTICS BAR ===== */
   #analytics-bar { display: none; }
 
-  /* ===== MOBILE NAV ===== */
-  #mobile-menu {
-    display: none; position: fixed; inset: 0; z-index: 999;
-    background: rgba(255,255,255,0.98); padding: 80px 24px 40px;
-    flex-direction: column; align-items: center; gap: 8px;
-    backdrop-filter: blur(8px);
-  }
-  #mobile-menu.open { display: flex; }
-  #mobile-menu a { font-family: 'Plus Jakarta Sans',sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--navy); text-decoration: none; padding: 12px 32px; border-radius: 10px; }
-  #mobile-menu a:hover { background: var(--gray-light); }
-
-  /* ===== ANIMATIONS ===== */
-  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
-
   /* ===== RESPONSIVE ===== */
-  @media (max-width: 900px) {
-    .hero-inner, .about-grid, .contact-grid, .education-grid { grid-template-columns: 1fr; gap: 40px; }
-    .hero-photo-wrap { order: -1; padding-top: 20px; padding-bottom: 20px; }
-    .hero-photo-card { width: 280px; height: 320px; }
-    .hero-badge { margin-top: 16px; }
-    .hero-available { top: -8px; right: -8px; }
-    .hamburger { display: flex; }
+  @media (max-width: 1000px) {
     .nav-links, .nav-cta { display: none; }
-    #admin-panel { width: calc(100vw - 40px); }
-    .about-interests { grid-template-columns: 1fr 1fr; }
-    section { padding: 60px 0; }
-    #hero { padding-top: 84px; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 56px; }
+    .hero-photo-wrap { order: -1; padding: 8px 14px 24px 0; }
+    .hero-photo-card { max-width: 320px; }
+    .hero-available { left: 0; }
+    .about-grid, .contact-grid, .education-grid, .exp-layout { grid-template-columns: 1fr; gap: 48px; }
+    section { padding: 76px 0; }
+    #hero { padding: 96px 0 60px; }
   }
-
+  @media (max-width: 800px) {
+    .admin-layout { grid-template-columns: 1fr; }
+    .admin-sidebar { display: flex; gap: 6px; overflow-x: auto; padding: 12px; border-right: none; border-bottom: 1px solid var(--line); }
+    .admin-sidebar-label { display: none; }
+    .admin-sidenav-item { width: auto; white-space: nowrap; }
+    .admin-content { padding: 24px 18px 80px; }
+    .admin-topbar { padding: 0 14px; }
+    .admin-topbar-badge, .admin-btn-cancel .lbl, .admin-btn-save-main .lbl { display: none; }
+  }
   @media (max-width: 600px) {
-    .projects-grid, .cert-grid, .skills-grid { grid-template-columns: 1fr; }
+    .container { padding: 0 20px; }
+    .nav-inner { padding: 0 20px; }
+    .projects-grid, .cert-grid, .skills-grid, .research-grid, .gallery-grid { grid-template-columns: 1fr; }
     .about-interests { grid-template-columns: 1fr; }
-    .hero-stats { gap: 20px; }
-    .education-grid { grid-template-columns: 1fr; }
-    .hero-actions { gap: 8px; }
-    .btn { padding: 8px 16px; font-size: 0.82rem; }
-    .hero-photo-card { margin-bottom: 12px; }
-    .hero-photo-tags { margin-bottom: 12px; }
-    .gallery-grid { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats > div { padding: 18px 0 0; margin: 0; border-right: none; }
+    .hero-stats > div:nth-child(2n) { padding-left: 20px; border-left: 1px solid var(--line); }
+    .hero-actions .btn { flex: 1 1 auto; }
+    .skill-category-card { padding: 24px; }
+    .contact-cta { padding: 30px 26px; box-shadow: 8px 8px 0 var(--accent); }
+    .hero-photo-card { box-shadow: 9px 9px 0 var(--accent); }
+    .timeline-header { flex-direction: column; gap: 8px; }
+    #preview-bar { padding-left: 14px; gap: 10px; }
+    #preview-bar .pv-label span.lbl { display: none; }
   }
 
-  .scroll-to-top {
-    position: fixed; bottom: 90px; right: 28px; z-index: 1000;
-    width: 40px; height: 40px; border-radius: 50%;
-    background: white; border: 1.5px solid var(--border); color: var(--navy);
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    font-size: 1rem; box-shadow: 0 2px 12px var(--shadow);
-    transition: all var(--transition); opacity: 0; pointer-events: none;
+  /* ===== PRINT (Get PDF fallback) ===== */
+  @media print {
+    #main-nav, #mobile-menu, .scroll-to-top, #greeting-overlay, #preview-bar, .hero-actions, .nav-cta, .btn { display: none !important; }
+    body { background: #fff; }
+    section { padding: 28px 0; break-inside: avoid-page; }
+    #hero { min-height: 0; padding: 20px 0; background: #fff; }
+    #hero::before { display: none; }
+    #contact, footer { background: #fff; color: #000; }
+    #contact h2, #contact p, .contact-value { color: #000 !important; }
+    .fade-up { opacity: 1 !important; transform: none !important; }
   }
-  .scroll-to-top.visible { opacity: 1; pointer-events: all; }
-  .scroll-to-top:hover { background: var(--navy); color: white; border-color: var(--navy); }
 </style>
 </head>
 <body>
@@ -544,7 +566,7 @@
 <!-- NAV -->
 <nav id="main-nav">
   <div class="nav-inner">
-    <a href="#hero" class="nav-logo">YL<span>.</span></a>
+    <a href="#hero" class="nav-logo" aria-label="Beranda">yl<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#hero" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -552,18 +574,16 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#certifications">Certs</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
       <a href="#contact" class="btn btn-outline btn-sm">Hire Me</a>
-      <button class="btn btn-primary btn-sm" id="download-cv-nav" onclick="handleDownloadCV()">⬇ Get PDF</button>
+      <button class="btn btn-primary btn-sm" id="download-cv-nav" onclick="handleDownloadCV()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg> Get PDF</button>
     </div>
-    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()" role="button" aria-label="Menu" tabindex="0"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></div>
   </div>
 </nav>
 
@@ -593,9 +613,9 @@
         <div class="hero-role" id="hero-role">System Analyst & Business Analyst</div>
         <p class="hero-desc" id="hero-desc">Experienced in bridging the gap between business needs and technical solutions. Passionate about digital transformation, process optimization, and building efficient systems that drive real impact.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#contact" class="btn btn-primary">Contact Me <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
           <a href="#contact" class="btn btn-accent">Hire Me</a>
-          <button class="btn btn-outline" onclick="handleDownloadCV()">⬇ Get PDF</button>
+          <button class="btn btn-outline" onclick="handleDownloadCV()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg> Get PDF</button>
         </div>
         <div class="hero-stats">
           <div>
@@ -633,7 +653,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-available" id="hero-available-wrap">🟢 Open to Work</div>
+        <div class="hero-available" id="hero-available-wrap"><span class="dot"></span>Open to Work</div>
       </div>
     </div>
   </div>
@@ -644,41 +664,41 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-info fade-up">
-        <div class="section-label">About Me</div>
+        <div class="section-label"><span>01</span> About Me</div>
         <h2 class="section-title" id="about-title">Who I Am</h2>
         <p id="about-p1">A dedicated System and Business Analyst with over 4 years of experience in analyzing business processes, designing system requirements, and facilitating digital transformation initiatives across various industries.</p>
         <p id="about-p2">I specialize in translating complex business requirements into clear, actionable technical specifications. My approach combines analytical rigor with a deep understanding of stakeholder needs, ensuring solutions are both technically sound and business-aligned.</p>
         <div class="about-details">
           <div class="about-detail-row">
-            <div class="about-detail-icon">📍</div>
+            <div class="about-detail-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div>
-              <div style="font-size:.75rem;color:var(--gray-text);font-weight:600;text-transform:uppercase;letter-spacing:.5px">Domicile</div>
-              <div style="font-weight:500;color:var(--text-dark)" id="profile-location">Kudus, Central Java, Indonesia</div>
+              <div class="detail-label">Domicile</div>
+              <div class="detail-value" id="profile-location">Kudus, Central Java, Indonesia</div>
             </div>
           </div>
           <div class="about-detail-row">
-            <div class="about-detail-icon">📧</div>
+            <div class="about-detail-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
             <div>
-              <div style="font-size:.75rem;color:var(--gray-text);font-weight:600;text-transform:uppercase;letter-spacing:.5px">Email</div>
-              <div style="font-weight:500;color:var(--text-dark)" id="profile-email">yusuf.luthfi@email.com</div>
+              <div class="detail-label">Email</div>
+              <div class="detail-value" id="profile-email">yusuf.luthfi@email.com</div>
             </div>
           </div>
           <div class="about-detail-row">
-            <div class="about-detail-icon">🎯</div>
+            <div class="about-detail-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
             <div>
-              <div style="font-size:.75rem;color:var(--gray-text);font-weight:600;text-transform:uppercase;letter-spacing:.5px">Focus Area</div>
-              <div style="font-weight:500;color:var(--text-dark)">System Analysis, Business Analysis, Digital Transformation</div>
+              <div class="detail-label">Focus Area</div>
+              <div class="detail-value">System Analysis, Business Analysis, Digital Transformation</div>
             </div>
           </div>
         </div>
-        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <button class="btn btn-outline" onclick="handleDownloadCV()">⬇ Get PDF</button>
+        <div style="margin-top:32px;display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-primary">Get In Touch <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+          <button class="btn btn-outline" onclick="handleDownloadCV()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg> Get PDF</button>
         </div>
       </div>
-      <div class="fade-up" style="animation-delay:.1s">
+      <div class="fade-up" style="transition-delay:.1s">
         <div class="section-label">My Interests</div>
-        <h3 style="margin-bottom:20px;color:var(--text-dark)">What I'm Passionate About</h3>
+        <h3 style="margin-bottom:22px;font-size:1.5rem;letter-spacing:-0.03em">What I'm Passionate About</h3>
         <div class="about-interests" id="interests-grid">
           <!-- filled by JS -->
         </div>
@@ -691,17 +711,17 @@
 <section id="experience">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Career Journey</div>
+      <div class="section-label"><span>02</span> Career Journey</div>
       <h2 class="section-title">Work & Organization Experience</h2>
       <p class="section-sub">A track record of delivering impactful results across various roles and organizations.</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;" class="exp-layout">
+    <div class="exp-layout">
       <div>
-        <h3 style="margin-bottom:24px;color:var(--gray-text);font-size:.85rem;text-transform:uppercase;letter-spacing:1px">💼 Work Experience</h3>
+        <h3 class="exp-heading"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Work Experience</h3>
         <div class="timeline" id="work-timeline"><!-- filled by JS --></div>
       </div>
       <div>
-        <h3 style="margin-bottom:24px;color:var(--gray-text);font-size:.85rem;text-transform:uppercase;letter-spacing:1px">🏛️ Organization Experience</h3>
+        <h3 class="exp-heading"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="m12 2 8 5H4z"/></svg> Organization Experience</h3>
         <div class="timeline" id="org-timeline"><!-- filled by JS --></div>
       </div>
     </div>
@@ -712,7 +732,7 @@
 <section id="projects" class="section-alt">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">My Work</div>
+      <div class="section-label"><span>03</span> My Work</div>
       <h2 class="section-title">Featured Projects</h2>
       <p class="section-sub">A selection of projects that demonstrate my analytical and technical capabilities.</p>
     </div>
@@ -724,7 +744,7 @@
 <section id="skills">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Capabilities</div>
+      <div class="section-label"><span>04</span> Capabilities</div>
       <h2 class="section-title">Skills & Expertise</h2>
       <p class="section-sub">A comprehensive blend of hard and soft skills developed over years of professional experience.</p>
     </div>
@@ -736,7 +756,7 @@
 <section id="education" class="section-alt">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Academic Background</div>
+      <div class="section-label"><span>05</span> Academic Background</div>
       <h2 class="section-title">Education</h2>
       <p class="section-sub">Building a strong foundation through formal education and continuous learning.</p>
     </div>
@@ -748,7 +768,7 @@
 <section id="certifications">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Achievements</div>
+      <div class="section-label"><span>06</span> Achievements</div>
       <h2 class="section-title">Certifications</h2>
       <p class="section-sub">Professional certifications validating expertise and commitment to continuous development.</p>
     </div>
@@ -760,7 +780,7 @@
 <section id="research" class="section-alt">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Scientific Publications</div>
+      <div class="section-label"><span>07</span> Scientific Publications</div>
       <h2 class="section-title">Research History</h2>
       <p class="section-sub">Scientific contributions through research publications in reputable journals.</p>
     </div>
@@ -772,7 +792,7 @@
 <section id="gallery">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-label">Moments and Activities</div>
+      <div class="section-label"><span>08</span> Moments and Activities</div>
       <h2 class="section-title">Gallery</h2>
       <p class="section-sub">Documentation of activities moments in my professional journey.</p>
     </div>
@@ -783,9 +803,9 @@
 <!-- GALLERY LIGHTBOX -->
 <div id="gallery-lightbox">
   <div class="lightbox-inner">
-    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1)">‹</button>
-    <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1)">›</button>
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1)" aria-label="Sebelumnya"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1)" aria-label="Berikutnya"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
     <img id="lightbox-img" class="lightbox-img" src="" alt="">
     <div class="lightbox-caption" id="lightbox-caption"></div>
     <div class="lightbox-year" id="lightbox-year"></div>
@@ -793,25 +813,25 @@
 </div>
 
 <!-- CONTACT -->
-<section id="contact" class="section-alt">
+<section id="contact">
   <div class="container">
     <div class="contact-grid">
       <div class="fade-up">
-        <div class="section-label">Get In Touch</div>
+        <div class="section-label"><span>09</span> Get In Touch</div>
         <h2 class="section-title">Let's Connect</h2>
-        <p style="margin-bottom:24px">Ready to bring analytical expertise and creative problem-solving to your team. Reach out for opportunities, collaborations, or just a conversation.</p>
+        <p style="margin-bottom:32px;max-width:480px">Ready to bring analytical expertise and creative problem-solving to your team. Reach out for opportunities, collaborations, or just a conversation.</p>
         <div class="contact-items" id="contact-items"><!-- filled by JS --></div>
       </div>
-      <div class="fade-up" style="animation-delay:.1s">
+      <div class="fade-up" style="transition-delay:.1s">
         <div class="contact-cta">
-          <div style="font-size:2.5rem">🤝</div>
+          <div class="contact-cta-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <h3>Open to New Opportunities</h3>
           <p>Whether you're looking for a system analyst, business analyst, or a IT support — I'm ready to make an impact.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="#contact" class="btn btn-accent" style="color:var(--navy)">Hire Me</a>
-            <button class="btn" style="background:rgba(255,255,255,0.1);color:white;border:1.5px solid rgba(255,255,255,0.3)" onclick="handleDownloadCV()">⬇ Get PDF</button>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="#contact" class="btn btn-accent">Hire Me</a>
+            <button class="btn btn-ghost-dark" onclick="handleDownloadCV()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg> Get PDF</button>
           </div>
-          <div id="visitor-count" style="font-size:.8rem;color:rgba(255,255,255,.5);margin-top:8px"></div>
+          <div id="visitor-count"></div>
         </div>
       </div>
     </div>
@@ -820,31 +840,34 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© <span id="footer-year"></span> <span id="footer-name">Muhammad Yusuf Luthfi Ijlal</span><span class="footer-rights"> — All rights reserved. Built with ♥ in Kudus, Indonesia.</span></p>
+  <p>© <span id="footer-year"></span> <span id="footer-name">Muhammad Yusuf Luthfi Ijlal</span><span class="footer-rights"> — All rights reserved. Built with <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg> in Kudus, Indonesia.</span></p>
 </footer>
 
 <!-- SCROLL TO TOP -->
-<button class="scroll-to-top" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="scroll-to-top" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg></button>
 
-<!-- ADMIN FAB -->
-<button id="admin-fab" onclick="openAdmin()" title="Admin Panel">⚙</button>
+<!-- PREVIEW BAR (muncul hanya saat admin memakai "Lihat Website") -->
+<div id="preview-bar">
+  <div class="pv-label"><span class="pv-dot"></span><span class="lbl">Mode pratinjau · </span>Anda masih login</div>
+  <button onclick="backToEditor()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5m7 7-7-7 7-7"/></svg> Kembali ke Editor</button>
+</div>
 
 <!-- GREETING OVERLAY -->
 <div id="greeting-overlay" style="display:none">
   <div class="greeting-card">
     <div class="greeting-accent"></div>
-    <span class="greeting-wave">👋</span>
+    <span class="greeting-wave"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span>
     <div class="greeting-time" id="greeting-time">Selamat Pagi</div>
     <div class="greeting-title" id="greeting-title">Halo, selamat datang!</div>
     <p class="greeting-desc" id="greeting-desc">Senang Anda mampir ke sini. Laman ini menampilkan portofolio dari <strong>Muhammad Yusuf Luthfi Ijlal</strong> — seorang System & Business Analyst yang bersemangat dalam transformasi digital dan analisis sistem. Silakan jelajahi dan kenali lebih jauh tentang saya!</p>
-    <button class="greeting-btn" onclick="closeGreeting()">Lihat Portofolio →</button>
+    <button class="greeting-btn" onclick="closeGreeting()">Lihat Portofolio <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
   </div>
 </div>
 
 <!-- PHOTO CROP MODAL -->
 <div id="photo-crop-modal">
   <div class="crop-box">
-    <div class="crop-title">📷 Sesuaikan Foto Profil</div>
+    <div class="crop-title"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg> Sesuaikan Foto Profil</div>
     <div class="crop-subtitle">Seret kotak untuk memilih area foto, atau geser sudut untuk mengubah ukuran.</div>
     <div class="crop-stage-wrap" id="crop-stage">
       <img id="crop-bg-img" src="" alt="">
@@ -863,18 +886,18 @@
       </div>
     </div>
     <div class="crop-actions">
-      <button class="admin-save" style="flex:1" onclick="applyCropNew()">✓ Terapkan</button>
-      <button class="admin-item-btn btn-delete-item" style="padding:10px 16px;flex:0" onclick="closeCropModal()">Batal</button>
+      <button class="admin-save" style="flex:1" onclick="applyCropNew()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Terapkan</button>
+      <button class="admin-item-btn btn-delete-item" style="padding:10px 18px;flex:0" onclick="closeCropModal()">Batal</button>
     </div>
   </div>
 </div>
 
-<!-- ADMIN AUTH OVERLAY (login pop-up) -->
+<!-- ADMIN AUTH OVERLAY (login pop-up, dibuka lewat Ctrl+Shift+A) -->
 <div id="admin-overlay" onclick="closeAdminIfOutside(event)">
   <div id="admin-auth-box">
     <div class="auth-box-header">
-      <h3>⚙ Content Manager</h3>
-      <button class="auth-close" onclick="closeAdmin()">✕</button>
+      <h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Content Manager</h3>
+      <button class="auth-close" onclick="closeAdmin()" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     </div>
     <div class="auth-box-body" id="admin-body"></div>
   </div>
@@ -884,44 +907,47 @@
 <div id="admin-fullscreen">
   <div class="admin-topbar">
     <div class="admin-topbar-left">
-      <div class="admin-topbar-logo">YL<span>.</span> CMS</div>
+      <div class="admin-topbar-logo">yl<span>.</span> CMS</div>
       <div class="admin-topbar-badge">Owner Mode</div>
     </div>
     <div class="admin-topbar-right">
-      <button class="admin-btn-cancel" onclick="cancelAdmin()">✕ Batalkan</button>
-      <button class="admin-btn-save-main" onclick="saveAllAndClose()">💾 Simpan & Kembali</button>
+      <button class="admin-btn-view" onclick="previewSite()" title="Lihat website tanpa keluar dari editor"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg> Lihat Website</button>
+      <button class="admin-btn-icon" onclick="openSiteNewTab()" title="Buka website di tab baru" aria-label="Buka website di tab baru"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></button>
+      <span class="admin-sep"></span>
+      <button class="admin-btn-cancel" onclick="cancelAdmin()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg> <span class="lbl">Batalkan</span></button>
+      <button class="admin-btn-save-main" onclick="saveAllAndClose()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg> <span class="lbl">Simpan & Kembali</span></button>
     </div>
   </div>
   <div class="admin-layout">
     <div class="admin-sidebar">
       <div class="admin-sidebar-label">Konten</div>
       <button class="admin-sidenav-item active" id="sidenav-profile" onclick="switchTab('profile')">
-        <span class="nav-icon">👤</span> Profile <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span> Profile <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-experience" onclick="switchTab('experience')">
-        <span class="nav-icon">💼</span> Experience <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span> Experience <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-projects" onclick="switchTab('projects')">
-        <span class="nav-icon">🚀</span> Projects <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span> Projects <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-skills" onclick="switchTab('skills')">
-        <span class="nav-icon">🔧</span> Skills <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg></span> Skills <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-education" onclick="switchTab('education')">
-        <span class="nav-icon">🎓</span> Education <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span> Education <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-certifications" onclick="switchTab('certifications')">
-        <span class="nav-icon">📜</span> Certifications <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0z"/></svg></span> Certifications <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-research" onclick="switchTab('research')">
-        <span class="nav-icon">🔬</span> Research <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18h8M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg></span> Research <span class="unsaved-dot"></span>
       </button>
       <button class="admin-sidenav-item" id="sidenav-gallery" onclick="switchTab('gallery')">
-        <span class="nav-icon">🖼️</span> Gallery <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></span> Gallery <span class="unsaved-dot"></span>
       </button>
       <div class="admin-sidebar-label" style="margin-top:16px">Hero Card</div>
       <button class="admin-sidenav-item" id="sidenav-herocard" onclick="switchTab('herocard')">
-        <span class="nav-icon">🪪</span> Hero Card <span class="unsaved-dot"></span>
+        <span class="nav-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 10h2M16 14h2M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg></span> Hero Card <span class="unsaved-dot"></span>
       </button>
     </div>
     <div class="admin-content" id="admin-tab-content"></div>
@@ -935,13 +961,47 @@
 
 <!-- SUCCESS TOAST -->
 <div id="success-toast">
-  <span class="toast-icon">🎉</span>
+  <span class="toast-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
   <span>Portfolio berhasil diperbarui!</span>
 </div>
 
 <script>
 // ===== DATA STORE =====
 const OWNER_MAC = 'KLUMpit#001';
+
+// ===== SVG ICON LIBRARY =====
+const ICONS = {"monitor": "<rect width=\"20\" height=\"14\" x=\"2\" y=\"3\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/>", "chart": "<path d=\"M3 3v18h18\"/><path d=\"M18 17V9M13 17V5M8 17v-3\"/>", "refresh": "<path d=\"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8\"/><path d=\"M21 3v5h-5\"/><path d=\"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16\"/><path d=\"M8 16H3v5\"/>", "rocket": "<path d=\"M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z\"/><path d=\"m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z\"/><path d=\"M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0\"/><path d=\"M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5\"/>", "clipboard": "<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\"/><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/><path d=\"M12 11h4M12 16h4M8 11h.01M8 16h.01\"/>", "users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/>", "user": "<path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/>", "briefcase": "<rect width=\"20\" height=\"14\" x=\"2\" y=\"7\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"/>", "building": "<path d=\"M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7\"/><path d=\"m12 2 8 5H4z\"/>", "factory": "<path d=\"M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z\"/><path d=\"M17 18h1M12 18h1M7 18h1\"/>", "cart": "<circle cx=\"8\" cy=\"21\" r=\"1\"/><circle cx=\"19\" cy=\"21\" r=\"1\"/><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"/>", "heart-pulse": "<path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z\"/><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"/>", "heart": "<path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z\"/>", "smartphone": "<rect width=\"14\" height=\"20\" x=\"5\" y=\"2\" rx=\"2\"/><path d=\"M12 18h.01\"/>", "link": "<path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/>", "graduation": "<path d=\"M22 10v6M2 10l10-5 10 5-10 5z\"/><path d=\"M6 12v5c3 3 9 3 12 0v-5\"/>", "book": "<path d=\"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z\"/><path d=\"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z\"/>", "file": "<path d=\"M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z\"/><path d=\"M14 2v6h6M16 13H8M16 17H8M10 9H8\"/>", "award": "<path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0z\"/>", "badge": "<path d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z\"/><path d=\"m9 12 2 2 4-4\"/>", "wrench": "<path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z\"/>", "lightbulb": "<path d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/><path d=\"M9 18h6M10 22h4\"/>", "microscope": "<path d=\"M6 18h8M3 22h18\"/><path d=\"M14 22a7 7 0 1 0 0-14h-1\"/><path d=\"M9 14h2\"/><path d=\"M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2z\"/><path d=\"M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3\"/>", "image": "<rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/><circle cx=\"9\" cy=\"9\" r=\"2\"/><path d=\"m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21\"/>", "camera": "<path d=\"M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z\"/><circle cx=\"12\" cy=\"13\" r=\"3\"/>", "calendar": "<rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/>", "id": "<path d=\"M16 10h2M16 14h2M6.17 15a3 3 0 0 1 5.66 0\"/><circle cx=\"9\" cy=\"11\" r=\"2\"/><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/>", "map-pin": "<path d=\"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/>", "phone": "<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/>", "mail": "<rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/>", "target": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/>", "eye": "<path d=\"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "download": "<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5M12 15V3\"/>", "upload": "<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m17 8-5-5-5 5M12 3v12\"/>", "globe": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20\"/>", "external-link": "<path d=\"M15 3h6v6M10 14 21 3\"/><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"/>", "arrow-up": "<path d=\"m5 12 7-7 7 7M12 19V5\"/>", "arrow-right": "<path d=\"M5 12h14m-7-7 7 7-7 7\"/>", "arrow-left": "<path d=\"M19 12H5m7 7-7-7 7-7\"/>", "chevron-down": "<path d=\"m6 9 6 6 6-6\"/>", "chevron-up": "<path d=\"m18 15-6-6-6 6\"/>", "chevron-left": "<path d=\"m15 18-6-6 6-6\"/>", "chevron-right": "<path d=\"m9 18 6-6-6-6\"/>", "x": "<path d=\"M18 6 6 18M6 6l12 12\"/>", "check": "<path d=\"M20 6 9 17l-5-5\"/>", "check-circle": "<path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><path d=\"m9 11 3 3L22 4\"/>", "trash": "<path d=\"M3 6h18\"/><path d=\"M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6\"/><path d=\"M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2\"/>", "save": "<path d=\"M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z\"/><path d=\"M17 21v-8H7v8M7 3v5h8\"/>", "folder": "<path d=\"M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z\"/>", "lock": "<rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/>", "alert": "<path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4M12 17h.01\"/>", "hand": "<path d=\"M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2\"/><path d=\"M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2\"/><path d=\"M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8\"/><path d=\"M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15\"/>", "database": "<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5v14a9 3 0 0 0 18 0V5\"/><path d=\"M3 12a9 3 0 0 0 18 0\"/>", "code": "<path d=\"m16 18 6-6-6-6M8 6l-6 6 6 6\"/>", "star": "<path d=\"m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z\"/>", "menu": "<path d=\"M4 6h16M4 12h16M4 18h16\"/>", "sparkle": "<path d=\"M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z\"/><path d=\"M19 17v4M17 19h4\"/>", "linkedin": "<path d=\"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z\"/>", "github": "<path d=\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\"/>"};
+const ICONS_FILLED = ["github", "linkedin"];
+const EMOJI_MAP = {"🖥": "monitor", "📊": "chart", "🔄": "refresh", "🚀": "rocket", "📋": "clipboard", "🤝": "users", "💼": "briefcase", "🏛": "building", "🏭": "factory", "🛒": "cart", "🏥": "heart-pulse", "📱": "smartphone", "🔗": "link", "🎓": "graduation", "🏫": "book", "📜": "file", "📄": "file", "🏆": "award", "🔧": "wrench", "🧠": "lightbulb", "🔬": "microscope", "🖼": "image", "📷": "camera", "📅": "calendar", "👤": "user", "👥": "users", "📍": "map-pin", "📞": "phone", "📧": "mail", "🎯": "target", "👁": "eye", "📁": "folder", "🌐": "globe", "🪪": "id", "🔐": "lock", "⚠": "alert", "👋": "hand", "💾": "save", "✅": "check-circle", "🗑": "trash", "⭐": "star", "💻": "monitor", "📈": "chart", "🔒": "lock", "☎": "phone", "✉": "mail"};
+const PICKER_ICONS = ["monitor", "chart", "refresh", "rocket", "clipboard", "users", "briefcase", "building", "factory", "cart", "heart-pulse", "smartphone", "link", "graduation", "book", "file", "award", "badge", "wrench", "lightbulb", "microscope", "image", "database", "code", "globe", "target", "star", "folder"];
+
+// Terima nama icon ATAU emoji lama (data dari database) -> nama icon yang valid
+function resolveIcon(v, fb) {
+  fb = fb || 'folder';
+  if(!v) return fb;
+  const k = String(v).replace(/\uFE0F/g, '').trim();
+  if(ICONS[k]) return k;
+  if(EMOJI_MAP[k]) return EMOJI_MAP[k];
+  return fb;
+}
+function ic(v, fb) {
+  const n = resolveIcon(v, fb);
+  const cls = ICONS_FILLED.includes(n) ? 'ic ic-fill' : 'ic';
+  return '<svg class="' + cls + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + ICONS[n] + '</svg>';
+}
+function iconPicker(id, value, fb, label) {
+  const cur = resolveIcon(value, fb);
+  return `<div class="admin-form-row"><label>${label || 'Icon'}</label>
+    <input type="hidden" id="${id}" value="${cur}">
+    <div class="icon-picker">${PICKER_ICONS.map(n => `<button type="button" class="icon-opt ${n===cur?'active':''}" title="${n}" aria-label="${n}" onclick="pickIcon('${id}','${n}',this)">${ic(n)}</button>`).join('')}</div></div>`;
+}
+function pickIcon(id, name, btn) {
+  document.getElementById(id).value = name;
+  btn.parentElement.querySelectorAll('.icon-opt').forEach(b => b.classList.toggle('active', b === btn));
+  const pv = document.getElementById('edu-icon-preview');
+  if(pv && pv.tagName.toLowerCase() === 'span') pv.innerHTML = ic(name);
+  if(typeof markDirty === 'function') markDirty();
+}
 
 const defaultData = {
   profile: {
@@ -959,12 +1019,12 @@ const defaultData = {
     statOrgs: '6+'
   },
   interests: [
-    { icon: '🖥️', title: 'System Design', desc: 'Architecture & integration' },
-    { icon: '📊', title: 'Data Analysis', desc: 'Insights from data' },
-    { icon: '🔄', title: 'Process Optimization', desc: 'Streamlining workflows' },
-    { icon: '🚀', title: 'Digital Transformation', desc: 'Tech-driven innovation' },
-    { icon: '📋', title: 'Business Strategy', desc: 'Aligning tech & business' },
-    { icon: '🤝', title: 'Stakeholder Mgmt', desc: 'Building relationships' }
+    { icon: 'monitor', title: 'System Design', desc: 'Architecture & integration' },
+    { icon: 'chart', title: 'Data Analysis', desc: 'Insights from data' },
+    { icon: 'refresh', title: 'Process Optimization', desc: 'Streamlining workflows' },
+    { icon: 'rocket', title: 'Digital Transformation', desc: 'Tech-driven innovation' },
+    { icon: 'clipboard', title: 'Business Strategy', desc: 'Aligning tech & business' },
+    { icon: 'users', title: 'Stakeholder Mgmt', desc: 'Building relationships' }
   ],
   workExp: [
     {
@@ -1014,42 +1074,42 @@ const defaultData = {
   ],
   projects: [
     {
-      emoji: '🏭',
+      emoji: 'factory',
       title: 'ERP System Implementation – Manufacturing',
       desc: 'Led the requirements analysis and project management for a full-scale ERP implementation for a mid-sized manufacturing company, covering inventory, production, and finance modules.',
       tech: ['SAP B1', 'BPMN', 'SQL', 'Power BI'],
       status: 'done'
     },
     {
-      emoji: '🛒',
+      emoji: 'cart',
       title: 'E-Commerce Analytics Platform',
       desc: 'Designed a business intelligence dashboard for a retail client to track sales performance, customer behavior, and inventory levels in real-time.',
       tech: ['Tableau', 'MySQL', 'Python', 'ETL'],
       status: 'done'
     },
     {
-      emoji: '🏥',
+      emoji: 'heart-pulse',
       title: 'Hospital Information System Analysis',
       desc: 'Conducted comprehensive gap analysis and requirement gathering for a hospital patient management system, producing detailed FSD and test cases.',
       tech: ['Use Case', 'UML', 'FSD', 'UAT'],
       status: 'done'
     },
     {
-      emoji: '📱',
+      emoji: 'smartphone',
       title: 'Mobile Attendance App – Spec Design',
       desc: 'Created complete product requirements document and UX flow for a GPS-based mobile attendance application for a logistics company with 200+ field staff.',
       tech: ['PRD', 'Figma', 'User Flows', 'REST API'],
       status: 'ongoing'
     },
     {
-      emoji: '🔗',
+      emoji: 'link',
       title: 'API Integration Architecture',
       desc: 'Designed integration architecture between legacy system and new SaaS platform, including data mapping, error handling specs, and migration strategy.',
       tech: ['REST API', 'JSON', 'Postman', 'Swagger'],
       status: 'done'
     },
     {
-      emoji: '📊',
+      emoji: 'chart',
       title: 'Business Process Optimization – FMCG',
       desc: 'Mapped and redesigned order-to-cash and procure-to-pay processes for an FMCG distributor, achieving 30% reduction in processing time.',
       tech: ['BPMN', 'Lean', 'Visio', 'VSM'],
@@ -1078,14 +1138,14 @@ const defaultData = {
   ],
   education: [
     {
-      icon: '🎓',
+      icon: 'graduation',
       degree: 'S1 – Industrial Engineering',
       school: 'Universitas Muria Kudus',
       period: '2016 – 2020',
       gpa: 'GPA: 3.72 / 4.00'
     },
     {
-      icon: '🏫',
+      icon: 'book',
       degree: 'IPA – Science Program',
       school: 'SMAN 1 Kudus',
       period: '2013 – 2016',
@@ -1093,10 +1153,10 @@ const defaultData = {
     }
   ],
   certifications: [
-    { icon: '📜', color: '#3B9AE1', name: 'Certified Business Analysis Professional (CBAP)', issuer: 'IIBA', year: '2023' },
-    { icon: '🏆', color: '#00C49F', name: 'Professional Scrum Master I (PSM I)', issuer: 'Scrum.org', year: '2022' },
-    { icon: '📊', color: '#576CBC', name: 'Microsoft Azure Fundamentals (AZ-900)', issuer: 'Microsoft', year: '2022' },
-    { icon: '📋', color: '#8B5CF6', name: 'Project Management Essentials', issuer: 'PMI / LinkedIn Learning', year: '2020' }
+    { icon: 'file', color: '#3B9AE1', name: 'Certified Business Analysis Professional (CBAP)', issuer: 'IIBA', year: '2023' },
+    { icon: 'award', color: '#00C49F', name: 'Professional Scrum Master I (PSM I)', issuer: 'Scrum.org', year: '2022' },
+    { icon: 'chart', color: '#576CBC', name: 'Microsoft Azure Fundamentals (AZ-900)', issuer: 'Microsoft', year: '2022' },
+    { icon: 'clipboard', color: '#8B5CF6', name: 'Project Management Essentials', issuer: 'PMI / LinkedIn Learning', year: '2020' }
   ],
   research: [
     { title: 'Analisis Kebutuhan Sistem Informasi ERP pada Industri Manufaktur Skala Menengah', rank: 'Sinta 2', type: 'team', year: '2023', link: 'https://doi.org/' },
@@ -1120,7 +1180,6 @@ const defaultData = {
 // ===== SUPABASE CONFIG =====
 const SUPA_URL  = 'https://wrwvnndslnfresgpfviy.supabase.co';
 const SUPA_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indyd3ZubmRzbG5mcmVzZ3Bmdml5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyNTAzMDMsImV4cCI6MjA5MjgyNjMwM30.rA2eF4elc3wgXcm9_pjLLSA6fSq0BwIR6OIuT5q1-k8';
-const SUPA_SVC  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indyd3ZubmRzbG5mcmVzZ3Bmdml5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NzI1MDMwMywiZXhwIjoyMDkyODI2MzAzfQ.XtQ-M1A0wI60DTqEzO1FmgEg-XBT7EB-DIm5BThuTt4';
 const SUPA_TABLE = 'portfolio_data';
 const SUPA_KEY   = 'main';
 
@@ -1223,7 +1282,9 @@ function showDbError(msg) {
   const t = document.createElement('div');
   t.id = 'db-err-toast';
   t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#dc2626;color:white;padding:12px 20px;border-radius:10px;font-size:.85rem;font-weight:600;z-index:99999;box-shadow:0 4px 20px rgba(0,0,0,0.3)';
-  t.textContent = '⚠️ ' + msg;
+  t.style.cssText += ';display:flex;align-items:center;gap:8px';
+  t.innerHTML = ic('alert');
+  t.appendChild(document.createTextNode(msg));
   document.body.appendChild(t);
   setTimeout(() => t.remove(), 5000);
 }
@@ -1318,7 +1379,7 @@ function renderInterests() {
   if(!grid) return;
   grid.innerHTML = portfolioData.interests.map(i => `
     <div class="interest-card">
-      <div class="interest-icon">${i.icon}</div>
+      <div class="interest-icon">${ic(i.icon,'star')}</div>
       <div>
         <div style="font-weight:600;font-size:.9rem;color:var(--text-dark)">${i.title}</div>
         <div style="font-size:.8rem;color:var(--gray-text)">${i.desc}</div>
@@ -1350,7 +1411,7 @@ function renderTimelineItem(item, section, idx) {
         </div>
         <div class="timeline-org">${item.org}</div>
         <div class="timeline-desc collapsed" id="${descId}">${item.desc}</div>
-        <button class="timeline-desc-toggle" id="${btnId}" onclick="toggleTimelineDesc('${section}',${idx})">View full ↓</button>
+        <button class="timeline-desc-toggle" id="${btnId}" onclick="toggleTimelineDesc('${section}',${idx})">View full ${ic('chevron-down')}</button>
         <div class="timeline-skills">${item.skills.map(s=>`<span class="skill-tag">${s}</span>`).join('')}</div>
       </div>
     </div>
@@ -1364,7 +1425,7 @@ function toggleTimelineDesc(section, idx) {
     const prevDesc = document.getElementById(`td-${section}-${prev}`);
     const prevBtn = document.getElementById(`tb-${section}-${prev}`);
     if(prevDesc) prevDesc.classList.add('collapsed');
-    if(prevBtn) prevBtn.textContent = 'View full ↓';
+    if(prevBtn) prevBtn.innerHTML = 'View full ' + ic('chevron-down');
     expandedItem[section] = -1;
   }
   const descEl = document.getElementById(`td-${section}-${idx}`);
@@ -1373,11 +1434,11 @@ function toggleTimelineDesc(section, idx) {
   const isCollapsed = descEl.classList.contains('collapsed');
   if(isCollapsed) {
     descEl.classList.remove('collapsed');
-    btnEl.textContent = 'View less ↑';
+    btnEl.innerHTML = 'View less ' + ic('chevron-up');
     expandedItem[section] = idx;
   } else {
     descEl.classList.add('collapsed');
-    btnEl.textContent = 'View full ↓';
+    btnEl.innerHTML = 'View full ' + ic('chevron-down');
     expandedItem[section] = -1;
   }
 }
@@ -1390,12 +1451,12 @@ function renderProjects() {
     if(p.imageData) {
       imgContent = `<img src="${p.imageData}" alt="${p.title}"><span class="project-badge ${p.status === 'done' ? 'badge-done' : 'badge-ongoing'}" style="z-index:2">${p.status === 'done' ? 'Completed' : 'Ongoing'}</span>`;
     } else if(p.imageLink) {
-      imgContent = `<img src="${p.imageLink}" alt="${p.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="project-emoji-fallback" style="display:none">${p.emoji||'📁'}</div><span class="project-badge ${p.status === 'done' ? 'badge-done' : 'badge-ongoing'}" style="z-index:2">${p.status === 'done' ? 'Completed' : 'Ongoing'}</span>`;
+      imgContent = `<img src="${p.imageLink}" alt="${p.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="project-emoji-fallback" style="display:none">${ic(p.emoji,'folder')}</div><span class="project-badge ${p.status === 'done' ? 'badge-done' : 'badge-ongoing'}" style="z-index:2">${p.status === 'done' ? 'Completed' : 'Ongoing'}</span>`;
     } else {
-      imgContent = `<span class="project-emoji-fallback">${p.emoji||'📁'}</span><span class="project-badge ${p.status === 'done' ? 'badge-done' : 'badge-ongoing'}">${p.status === 'done' ? 'Completed' : 'Ongoing'}</span>`;
+      imgContent = `<span class="project-emoji-fallback">${ic(p.emoji,'folder')}</span><span class="project-badge ${p.status === 'done' ? 'badge-done' : 'badge-ongoing'}">${p.status === 'done' ? 'Completed' : 'Ongoing'}</span>`;
     }
-    const liveBtn = p.liveLink ? `<a class="project-link-btn project-link-live" href="${p.liveLink}" target="_blank" rel="noopener">🌐 Live Project</a>` : '';
-    const docsBtn = p.docsLink ? `<a class="project-link-btn project-link-docs" href="${p.docsLink}" target="_blank" rel="noopener">📄 Dokumentasi</a>` : '';
+    const liveBtn = p.liveLink ? `<a class="project-link-btn project-link-live" href="${p.liveLink}" target="_blank" rel="noopener">${ic('globe')} Live Project</a>` : '';
+    const docsBtn = p.docsLink ? `<a class="project-link-btn project-link-docs" href="${p.docsLink}" target="_blank" rel="noopener">${ic('file')} Dokumentasi</a>` : '';
     return `
     <div class="project-card fade-up">
       <div class="project-img">${imgContent}</div>
@@ -1416,7 +1477,7 @@ function renderSkills() {
   grid.innerHTML = `
     <div class="skill-category-card fade-up">
       <div class="skill-cat-header">
-        <div class="skill-cat-icon">🔧</div>
+        <div class="skill-cat-icon">${ic('wrench')}</div>
         <div class="skill-cat-title">Hard Skills</div>
       </div>
       <div class="skill-list">
@@ -1425,7 +1486,7 @@ function renderSkills() {
     </div>
     <div class="skill-category-card fade-up" style="animation-delay:.1s">
       <div class="skill-cat-header">
-        <div class="skill-cat-icon">🧠</div>
+        <div class="skill-cat-icon">${ic('lightbulb')}</div>
         <div class="skill-cat-title">Soft Skills</div>
       </div>
       <div class="skill-list">
@@ -1456,7 +1517,7 @@ function renderEducation() {
   grid.innerHTML = portfolioData.education.map(e => {
     const iconContent = e.iconData
       ? `<img src="${e.iconData}" alt="${e.school}" style="width:100%;height:100%;object-fit:contain;border-radius:10px">`
-      : e.icon;
+      : ic(e.icon,'graduation');
     return `
     <div class="edu-card fade-up">
       <div class="edu-icon">${iconContent}</div>
@@ -1476,7 +1537,7 @@ function renderCertifications() {
   if(!grid) return;
   grid.innerHTML = portfolioData.certifications.map(c => `
     <div class="cert-card fade-up">
-      <div class="cert-icon" style="background:${c.color}20">${c.icon}</div>
+      <div class="cert-icon" style="background:${c.color}1f;color:${c.color}">${ic(c.icon,'award')}</div>
       <div>
         <div class="cert-name">${c.name}</div>
         <div class="cert-issuer">${c.issuer}</div>
@@ -1493,29 +1554,29 @@ function renderContact() {
   if(!container) return;
   const items = [
     {
-      icon: '📍', bg: '#3B9AE120', label: 'Domicile',
+      icon: 'map-pin', bg: '#3B9AE120', label: 'Domicile',
       value: p.location,
       href: `https://www.google.com/maps/search/${encodeURIComponent(p.location)}`
     },
     {
-      icon: '📞', bg: '#00C49F20', label: 'Phone',
+      icon: 'phone', bg: '#00C49F20', label: 'Phone',
       value: p.phone,
       href: `tel:${p.phone.replace(/\s/g,'')}`
     },
     {
-      icon: '📧', bg: '#576CBC20', label: 'Email',
+      icon: 'mail', bg: '#576CBC20', label: 'Email',
       value: p.email,
       href: `mailto:${p.email}?subject=Opportunity%20Inquiry`
     },
     {
-      icon: '💼', bg: '#0B244720', label: 'LinkedIn',
+      icon: 'linkedin', bg: '#0B244720', label: 'LinkedIn',
       value: 'muhammad-yusuf-luthfi-ijlal',
       href: p.linkedin
     }
   ];
   container.innerHTML = items.map(i => `
     <a class="contact-item" href="${i.href}" target="_blank" rel="noopener">
-      <div class="contact-icon" style="background:${i.bg}">${i.icon}</div>
+      <div class="contact-icon" style="background:${i.bg}">${ic(i.icon)}</div>
       <div>
         <div class="contact-label">${i.label}</div>
         <div class="contact-value">${i.value}</div>
@@ -1527,7 +1588,7 @@ function renderContact() {
   let vc = parseInt(sessionStorage.getItem('yusuf_visitors') || '0') + 1;
   sessionStorage.setItem('yusuf_visitors', vc);
   const vcEl = document.getElementById('visitor-count');
-  if(vcEl) vcEl.textContent = `👁 ${vc} visit${vc>1?'s':''} di sesi ini`;
+  if(vcEl) vcEl.innerHTML = ic('eye') + ` ${vc} visit${vc>1?'s':''} di sesi ini`;
 }
 
 function initSkillBars() {
@@ -1563,10 +1624,10 @@ function renderResearch() {
         <span class="research-rank ${rankClass(r.rank)}">${r.rank}</span>
       </div>
       <div class="research-meta">
-        <span class="research-meta-item">📅 ${r.year}</span>
-        <span class="research-meta-item">${r.type === 'team' ? '👥 Tim' : '👤 Individual'}</span>
+        <span class="research-meta-item">${ic('calendar')} ${r.year}</span>
+        <span class="research-meta-item">${r.type === 'team' ? ic('users') + ' Tim' : ic('user') + ' Individual'}</span>
       </div>
-      ${r.link ? `<a class="research-link" href="${r.link}" target="_blank" rel="noopener">🔗 Lihat Publikasi ↗</a>` : ''}
+      ${r.link ? `<a class="research-link" href="${r.link}" target="_blank" rel="noopener">${ic('link')} Lihat Publikasi ${ic('external-link')}</a>` : ''}
     </div>
   `).join('');
   observeElements();
@@ -1586,13 +1647,13 @@ function renderGallery() {
   grid.innerHTML = list.map((item, i) => {
     const imgHtml = item.imageData
       ? `<img src="${item.imageData}" alt="${item.caption}">`
-      : `<div class="gallery-img-placeholder">📷</div>`;
+      : `<div class="gallery-img-placeholder">${ic('camera')}</div>`;
     return `
     <div class="gallery-item fade-up" onclick="openLightbox(${i})">
       <div class="gallery-img-wrap">${imgHtml}</div>
       <div class="gallery-info">
         <div class="gallery-caption">${item.caption}</div>
-        <span class="gallery-year">📅 ${item.year}</span>
+        <span class="gallery-year">${ic('calendar')} ${item.year}</span>
       </div>
     </div>`;
   }).join('');
@@ -1616,7 +1677,9 @@ function updateLightbox() {
   img.src = item.imageData || '';
   img.style.display = item.imageData ? 'block' : 'none';
   document.getElementById('lightbox-caption').textContent = item.caption;
-  document.getElementById('lightbox-year').textContent = '📅 ' + item.year;
+  const ly = document.getElementById('lightbox-year');
+  ly.innerHTML = ic('calendar') + ' ';
+  ly.appendChild(document.createTextNode(item.year || ''));
 }
 
 function lightboxNav(dir) {
@@ -1713,12 +1776,12 @@ function renderAdminContent() {
   const body = document.getElementById('admin-body');
   body.innerHTML = `
     <div class="auth-screen">
-      <div style="font-size:2.5rem;margin-bottom:20px">🔐</div>
+      <div class="auth-lock">${ic('lock')}</div>
       <h3>Owner Access Required</h3>
       <input class="admin-input" id="mac-input" placeholder="-----" style="text-align:center;letter-spacing:2px;margin-bottom:12px"
              value="" onkeydown="if(event.key==='Enter')verifyMAC()">
       <button class="admin-save" style="width:100%" onclick="verifyMAC()">Verify & Enter</button>
-      <div id="mac-error" style="color:#dc2626;font-size:.8rem;margin-top:10px;display:none">⚠ Akses ditolak.</div>
+      <div id="mac-error" style="color:#B8340F;font-size:.82rem;margin-top:12px;display:none;align-items:center;justify-content:center;gap:6px">${ic('alert')} Akses ditolak.</div>
     </div>
   `;
   setTimeout(() => document.getElementById('mac-input')?.focus(), 100);
@@ -1735,7 +1798,7 @@ function verifyMAC() {
     openFullscreenCMS();
   } else {
     const err = document.getElementById('mac-error');
-    if(err) err.style.display = 'block';
+    if(err) err.style.display = 'flex';
     if(input) { input.style.borderColor = '#dc2626'; setTimeout(() => { input.style.borderColor = ''; }, 2000); }
   }
 }
@@ -1746,9 +1809,40 @@ function openFullscreenCMS() {
 }
 
 function closeFullscreenCMS() {
-  document.getElementById('admin-fullscreen').classList.remove('open');
+  document.getElementById('admin-fullscreen').classList.remove('open', 'preview-hidden');
+  document.body.classList.remove('previewing');
   adminAuthenticated = false;
   adminHasChanges = false;
+}
+
+// ===== LIHAT WEBSITE dari dalam editor (tanpa logout / tanpa kehilangan perubahan) =====
+const TAB_TO_SECTION = { profile:'hero', experience:'experience', projects:'projects', skills:'skills',
+  education:'education', certifications:'certifications', research:'research', gallery:'gallery', herocard:'hero' };
+let _adminScrollTop = 0;
+
+function previewSite() {
+  const fs = document.getElementById('admin-fullscreen');
+  if(!fs || !adminAuthenticated) return;
+  _adminScrollTop = fs.scrollTop;
+  fs.classList.add('preview-hidden');
+  document.body.classList.add('previewing');
+  renderAll();            // pastikan website menampilkan data terbaru dari editor
+  handleExpLayout();
+  // loncat ke bagian website yang sedang diedit
+  const target = document.getElementById(TAB_TO_SECTION[currentAdminTab] || 'hero');
+  const y = target ? Math.max(0, target.getBoundingClientRect().top + window.scrollY - (target.id === 'hero' ? 0 : 68)) : 0;
+  window.scrollTo({ top: y, behavior: 'instant' });
+  setTimeout(observeElements, 50);
+}
+
+function backToEditor() {
+  const fs = document.getElementById('admin-fullscreen');
+  document.body.classList.remove('previewing');
+  if(fs) { fs.classList.remove('preview-hidden'); fs.scrollTop = _adminScrollTop; }
+}
+
+function openSiteNewTab() {
+  window.open(location.pathname + location.search, '_blank', 'noopener');
 }
 
 // Tandai ada perubahan
@@ -1778,7 +1872,7 @@ function showConfirmDiscard() {
   const modal = document.getElementById('confirm-modal');
   const box = document.getElementById('confirm-box-inner');
   box.innerHTML = `
-    <div class="confirm-icon">⚠️</div>
+    <div class="confirm-icon">${ic('alert')}</div>
     <div class="confirm-title">Buang perubahan?</div>
     <div class="confirm-desc">Ada perubahan yang belum disimpan. Yakin ingin kembali tanpa menyimpan?</div>
     <div class="confirm-actions">
@@ -1861,7 +1955,7 @@ function renderProfileTab(c) {
     ${adminInput('Email','a-email',p.email)}
     ${adminInput('LinkedIn URL','a-linkedin',p.linkedin)}
     <div class="admin-form-card">
-      <div class="admin-form-card-title">📄 Get PDF / CV Link</div>
+      <div class="admin-form-card-title">${ic('file')} Get PDF / CV Link</div>
       <p style="font-size:.8rem;color:var(--gray-text);margin-bottom:12px">Jika diisi, tombol "Get PDF" akan membuka link ini (Google Drive PDF dll). Jika kosong, akan menggunakan Print/Save as PDF browser.</p>
       ${adminInput('Link Google Drive PDF atau URL CV','a-cvlink',portfolioData.cvLink||'')}
     </div>
@@ -1871,7 +1965,7 @@ function renderProfileTab(c) {
       ${adminInput('Orgs Stat','a-sorgs',p.statOrgs)}
     </div>
     <button class="admin-save" onclick="saveProfile()">Save Profile</button>
-    <div class="admin-status" id="save-profile-ok">✅ Profile saved & updated!</div>
+    <div class="admin-status" id="save-profile-ok">${ic('check-circle')} Profile saved & updated!</div>
   `;
 }
 
@@ -1891,7 +1985,7 @@ function saveProfile() {
 function renderExperienceTab(c) {
   c.innerHTML = `
     <div style="margin-bottom:16px">
-      <h4 style="margin-bottom:10px;color:var(--text-dark)">💼 Work Experience</h4>
+      <h4 style="margin-bottom:10px;color:var(--text-dark)">${ic('briefcase')} Work Experience</h4>
       <div class="admin-list" id="admin-work-list">
         ${portfolioData.workExp.map((w,i) => `
           <div class="admin-list-item">
@@ -1907,7 +2001,7 @@ function renderExperienceTab(c) {
     </div>
     <hr style="border:none;border-top:1px solid var(--border);margin:20px 0">
     <div>
-      <h4 style="margin-bottom:10px;color:var(--text-dark)">🏛️ Organization Experience</h4>
+      <h4 style="margin-bottom:10px;color:var(--text-dark)">${ic('building')} Organization Experience</h4>
       <div class="admin-list" id="admin-org-list">
         ${portfolioData.orgExp.map((o,i) => `
           <div class="admin-list-item">
@@ -1941,7 +2035,7 @@ function editExp(type, idx) {
       <button class="admin-save" onclick="saveExp('${type}',${idx})">Save</button>
       <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('exp-edit-area').innerHTML=''">Cancel</button>
     </div>
-    <div class="admin-status" id="save-exp-ok">✅ Saved!</div>
+    <div class="admin-status" id="save-exp-ok">${ic('check-circle')} Saved!</div>
   `;
   area.scrollIntoView({ behavior:'smooth' });
 }
@@ -1972,7 +2066,7 @@ function renderProjectsTab(c) {
     <div class="admin-list">
       ${portfolioData.projects.map((p,i) => `
         <div class="admin-list-item">
-          <div><div class="admin-list-item-title">${p.emoji} ${p.title}</div><div class="admin-list-item-sub">${p.tech.join(', ')}</div></div>
+          <div><div class="admin-list-item-title">${ic(p.emoji,'folder')} ${p.title}</div><div class="admin-list-item-sub">${p.tech.join(', ')}</div></div>
           <div class="admin-item-actions">
             <button class="admin-item-btn btn-edit-item" onclick="editProject(${i})">Edit</button>
             <button class="admin-item-btn btn-delete-item" onclick="deleteProject(${i})">Del</button>
@@ -1986,12 +2080,12 @@ function renderProjectsTab(c) {
 }
 
 function editProject(idx) {
-  const item = idx >= 0 ? portfolioData.projects[idx] : { emoji:'📁', title:'', desc:'', tech:[], status:'done', imageData:'', imageLink:'', liveLink:'', docsLink:'' };
+  const item = idx >= 0 ? portfolioData.projects[idx] : { emoji:'folder', title:'', desc:'', tech:[], status:'done', imageData:'', imageLink:'', liveLink:'', docsLink:'' };
   const area = document.getElementById('proj-edit-area');
   area.innerHTML = `
     <hr style="border:none;border-top:1px solid var(--border);margin-bottom:16px">
     <h4 style="margin-bottom:12px">${idx>=0?'Edit':'New'} Project</h4>
-    ${adminInput('Emoji (cadangan jika tidak ada gambar)','p-emoji',item.emoji||'📁')}
+    ${iconPicker('p-emoji', item.emoji, 'folder', 'Icon (cadangan jika tidak ada gambar)')}
     ${adminInput('Project Title','p-title',item.title)}
     ${adminTextarea('Description','p-desc',item.desc)}
     ${adminInput('Tech Stack (comma separated)','p-tech',(item.tech||[]).join(', '))}
@@ -2002,16 +2096,16 @@ function editProject(idx) {
       </select>
     </div>
     <div class="admin-form-card" style="margin-top:4px">
-      <div class="admin-form-card-title">🖼 Gambar Project</div>
+      <div class="admin-form-card-title">${ic('image')} Gambar Project</div>
       <div style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
-        ${item.imageData ? `<img src="${item.imageData}" style="width:72px;height:50px;object-fit:cover;border-radius:6px;border:1px solid var(--border)">` : `<div style="width:72px;height:50px;background:var(--gray-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.4rem">${item.emoji||'📁'}</div>`}
-        <button class="admin-save" style="padding:7px 14px;font-size:.82rem" onclick="uploadProjectImage(${idx})">📁 Upload Gambar</button>
-        ${item.imageData ? `<button class="admin-item-btn btn-delete-item" style="padding:7px 12px" onclick="removeProjectImage(${idx})">🗑 Hapus</button>` : ''}
+        ${item.imageData ? `<img src="${item.imageData}" style="width:72px;height:50px;object-fit:cover;border-radius:6px;border:1px solid var(--border)">` : `<div style="width:72px;height:50px;background:var(--gray-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.4rem">${ic(item.emoji,'folder')}</div>`}
+        <button class="admin-save" style="padding:7px 14px;font-size:.82rem" onclick="uploadProjectImage(${idx})">${ic('upload')} Upload Gambar</button>
+        ${item.imageData ? `<button class="admin-item-btn btn-delete-item" style="padding:7px 12px" onclick="removeProjectImage(${idx})">${ic('trash')} Hapus</button>` : ''}
       </div>
       ${adminInput('Atau: Link Google Drive / URL Gambar','p-imagelink', item.imageLink||'')}
     </div>
     <div class="admin-form-card">
-      <div class="admin-form-card-title">🔗 Link Project</div>
+      <div class="admin-form-card-title">${ic('link')} Link Project</div>
       ${adminInput('Link Hasil Project (bisa diakses publik)','p-livelink', item.liveLink||'')}
       ${adminInput('Link Dokumentasi (Google Drive / URL)','p-docslink', item.docsLink||'')}
     </div>
@@ -2019,7 +2113,7 @@ function editProject(idx) {
       <button class="admin-save" onclick="saveProject(${idx})">Save</button>
       <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('proj-edit-area').innerHTML=''">Cancel</button>
     </div>
-    <div class="admin-status" id="save-proj-ok">✅ Saved!</div>
+    <div class="admin-status" id="save-proj-ok">${ic('check-circle')} Saved!</div>
   `;
   area.scrollIntoView({ behavior:'smooth' });
 }
@@ -2077,7 +2171,7 @@ function deleteProject(idx) {
 function renderSkillsTab(c) {
   c.innerHTML = `
     <div style="margin-bottom:16px">
-      <h4 style="margin-bottom:10px">🔧 Hard Skills</h4>
+      <h4 style="margin-bottom:10px">${ic('wrench')} Hard Skills</h4>
       <div class="admin-list">
         ${portfolioData.hardSkills.map((s,i) => `
           <div class="admin-list-item">
@@ -2092,7 +2186,7 @@ function renderSkillsTab(c) {
       <button class="btn btn-outline btn-sm" onclick="editSkill('hard',-1)" style="width:100%;margin-bottom:12px">+ Add Hard Skill</button>
     </div>
     <div>
-      <h4 style="margin-bottom:10px">🧠 Soft Skills</h4>
+      <h4 style="margin-bottom:10px">${ic('lightbulb')} Soft Skills</h4>
       <div class="admin-list">
         ${portfolioData.softSkills.map((s,i) => `
           <div class="admin-list-item">
@@ -2122,7 +2216,7 @@ function editSkill(type, idx) {
       <button class="admin-save" onclick="saveSkill('${type}',${idx})">Save</button>
       <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('skill-edit-area').innerHTML=''">Cancel</button>
     </div>
-    <div class="admin-status" id="save-sk-ok">✅ Saved!</div>
+    <div class="admin-status" id="save-sk-ok">${ic('check-circle')} Saved!</div>
   `;
   // Scroll ke Skill Name field (seperti Experience)
   setTimeout(() => {
@@ -2165,22 +2259,22 @@ function renderEducationTab(c) {
 }
 
 function editEdu(idx) {
-  const item = idx >= 0 ? portfolioData.education[idx] : { icon:'🎓', degree:'', school:'', period:'', gpa:'', iconData:'' };
+  const item = idx >= 0 ? portfolioData.education[idx] : { icon:'graduation', degree:'', school:'', period:'', gpa:'', iconData:'' };
   const area = document.getElementById('edu-edit-area');
   area.innerHTML = `
     <hr style="border:none;border-top:1px solid var(--border);margin-bottom:12px">
     <div class="admin-form-card">
       <div class="admin-form-card-title">Icon / Logo Sekolah</div>
       <div style="display:flex;gap:14px;align-items:center;margin-bottom:12px">
-        <div style="width:48px;height:48px;border-radius:12px;background:var(--white);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
-          ${item.iconData ? `<img id="edu-icon-preview" src="${item.iconData}" style="width:100%;height:100%;object-fit:contain">` : `<span id="edu-icon-preview" style="color:white;font-size:1.4rem">${item.icon||'🎓'}</span>`}
+        <div class="icon-preview-box">
+          ${item.iconData ? `<img id="edu-icon-preview" src="${item.iconData}" style="width:100%;height:100%;object-fit:contain">` : `<span id="edu-icon-preview" style="display:flex">${ic(item.icon,'graduation')}</span>`}
         </div>
         <div style="display:flex;flex-direction:column;gap:6px">
-          <button class="admin-save" style="padding:7px 14px;font-size:.82rem" onclick="uploadEduIcon(${idx})">📁 Upload Logo/Icon</button>
-          ${item.iconData ? `<button class="admin-item-btn btn-delete-item" style="padding:5px 10px;font-size:.75rem" onclick="removeEduIcon(${idx})">🗑 Hapus</button>` : ''}
+          <button class="admin-save" style="padding:7px 14px;font-size:.82rem" onclick="uploadEduIcon(${idx})">${ic('upload')} Upload Logo/Icon</button>
+          ${item.iconData ? `<button class="admin-item-btn btn-delete-item" style="padding:5px 10px;font-size:.75rem" onclick="removeEduIcon(${idx})">${ic('trash')} Hapus</button>` : ''}
         </div>
       </div>
-      ${adminInput('Emoji Icon (dipakai jika tidak ada gambar)','ed-icon',item.icon||'🎓')}
+      ${iconPicker('ed-icon', item.icon, 'graduation', 'Icon (dipakai jika tidak ada gambar)')}
     </div>
     ${adminInput('Degree / Program','ed-degree',item.degree)}
     ${adminInput('School / University','ed-school',item.school)}
@@ -2190,7 +2284,7 @@ function editEdu(idx) {
       <button class="admin-save" onclick="saveEdu(${idx})">Save</button>
       <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('edu-edit-area').innerHTML=''">Cancel</button>
     </div>
-    <div class="admin-status" id="save-edu-ok">✅ Saved!</div>
+    <div class="admin-status" id="save-edu-ok">${ic('check-circle')} Saved!</div>
   `;
   area.scrollIntoView({ behavior:'smooth' });
 }
@@ -2241,7 +2335,7 @@ function renderCertificationsTab(c) {
     <div class="admin-list">
       ${portfolioData.certifications.map((cert,i) => `
         <div class="admin-list-item">
-          <div><div class="admin-list-item-title">${cert.icon} ${cert.name}</div><div class="admin-list-item-sub">${cert.issuer} · ${cert.year}</div></div>
+          <div><div class="admin-list-item-title">${ic(cert.icon,'award')} ${cert.name}</div><div class="admin-list-item-sub">${cert.issuer} · ${cert.year}</div></div>
           <div class="admin-item-actions">
             <button class="admin-item-btn btn-edit-item" onclick="editCert(${i})">Edit</button>
             <button class="admin-item-btn btn-delete-item" onclick="deleteCert(${i})">Del</button>
@@ -2255,10 +2349,10 @@ function renderCertificationsTab(c) {
 }
 
 function editCert(idx) {
-  const item = idx >= 0 ? portfolioData.certifications[idx] : { icon:'📜', color:'#3B9AE1', name:'', issuer:'', year:'' };
+  const item = idx >= 0 ? portfolioData.certifications[idx] : { icon:'award', color:'#3B9AE1', name:'', issuer:'', year:'' };
   document.getElementById('cert-edit-area').innerHTML = `
     <hr style="border:none;border-top:1px solid var(--border);margin-bottom:12px">
-    ${adminInput('Icon Emoji','c-icon',item.icon)}
+    ${iconPicker('c-icon', item.icon, 'award', 'Icon')}
     ${adminInput('Certification Name','c-name',item.name)}
     ${adminInput('Issuer / Organization','c-issuer',item.issuer)}
     ${adminInput('Year','c-year',item.year)}
@@ -2267,7 +2361,7 @@ function editCert(idx) {
       <button class="admin-save" onclick="saveCert(${idx})">Save</button>
       <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('cert-edit-area').innerHTML=''">Cancel</button>
     </div>
-    <div class="admin-status" id="save-cert-ok">✅ Saved!</div>
+    <div class="admin-status" id="save-cert-ok">${ic('check-circle')} Saved!</div>
   `;
 }
 
@@ -2306,7 +2400,7 @@ function showGreeting() {
   let salam = h < 11 ? 'Selamat Pagi' : h < 15 ? 'Selamat Siang' : h < 19 ? 'Selamat Sore' : 'Selamat Malam';
   const el = document.getElementById('greeting-time');
   const title = document.getElementById('greeting-title');
-  if(el) el.textContent = salam + ' 👋';
+  if(el) el.textContent = salam;
   if(title) title.innerHTML = salam + '! Selamat datang di portofolio saya.';
   const overlay = document.getElementById('greeting-overlay');
   if(overlay) overlay.style.display = 'flex';
@@ -2567,7 +2661,7 @@ function renderResearchTab(c) {
   const list = portfolioData.research || [];
   const rankOpts = ['Scopus','Sinta 1','Sinta 2','Sinta 3','Sinta 4','Sinta 5','Sinta 6'];
   c.innerHTML = `
-    <div class="admin-content-title">🔬 Riwayat Penelitian</div>
+    <div class="admin-content-title">${ic('microscope')} Riwayat Penelitian</div>
     <div class="admin-content-sub">Kelola daftar publikasi dan penelitian ilmiah Anda.</div>
     <div class="admin-list">
       ${list.map((r,i) => `
@@ -2615,7 +2709,7 @@ function editResearch(idx) {
         <button class="admin-save" onclick="saveResearch(${idx})">Simpan</button>
         <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('research-edit-area').innerHTML=''">Batal</button>
       </div>
-      <div class="admin-status" id="save-research-ok">✅ Tersimpan!</div>
+      <div class="admin-status" id="save-research-ok">${ic('check-circle')} Tersimpan!</div>
     </div>
   `;
   area.scrollIntoView({ behavior:'smooth' });
@@ -2640,16 +2734,16 @@ function deleteResearch(idx) {
 function renderGalleryTab(c) {
   const list = portfolioData.gallery || [];
   c.innerHTML = `
-    <div class="admin-content-title">🖼️ Gallery</div>
+    <div class="admin-content-title">${ic('image')} Gallery</div>
     <div class="admin-content-sub">Kelola foto-foto kegiatan Anda. Setiap foto dapat disertai caption dan tahun kegiatan.</div>
     <div class="admin-list" id="admin-gallery-list">
       ${list.map((item,i) => `
         <div class="admin-list-item">
           <div style="display:flex;align-items:center;gap:12px;min-width:0;flex:1">
-            ${item.imageData ? `<img src="${item.imageData}" style="width:48px;height:36px;object-fit:cover;border-radius:5px;flex-shrink:0">` : `<div style="width:48px;height:36px;background:var(--gray-light);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">📷</div>`}
+            ${item.imageData ? `<img src="${item.imageData}" style="width:48px;height:36px;object-fit:cover;border-radius:5px;flex-shrink:0">` : `<div style="width:48px;height:36px;background:var(--gray-light);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">${ic('camera')}</div>`}
             <div style="min-width:0">
               <div class="admin-list-item-title" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${item.caption||'(No caption)'}</div>
-              <div class="admin-list-item-sub">📅 ${item.year||'-'}</div>
+              <div class="admin-list-item-sub">${ic('calendar')} ${item.year||'-'}</div>
             </div>
           </div>
           <div class="admin-item-actions" style="flex-shrink:0">
@@ -2673,10 +2767,10 @@ function editGalleryItem(idx) {
     <div class="admin-form-card">
       <div class="admin-form-card-title">${idx>=0?'Edit':'Tambah'} Foto</div>
       <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px">
-        ${item.imageData ? `<img src="${item.imageData}" style="width:90px;height:65px;object-fit:cover;border-radius:7px;border:1px solid var(--border)">` : `<div style="width:90px;height:65px;background:var(--gray-light);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:1.8rem">📷</div>`}
+        ${item.imageData ? `<img src="${item.imageData}" style="width:90px;height:65px;object-fit:cover;border-radius:7px;border:1px solid var(--border)">` : `<div style="width:90px;height:65px;background:var(--gray-light);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:1.8rem">${ic('camera')}</div>`}
         <div style="display:flex;flex-direction:column;gap:6px">
-          <button class="admin-save" style="padding:8px 14px;font-size:.82rem" onclick="uploadGalleryPhoto(${idx})">📁 Upload Foto</button>
-          ${item.imageData ? `<button class="admin-item-btn btn-delete-item" style="padding:5px 10px;font-size:.75rem" onclick="removeGalleryPhoto(${idx})">🗑 Hapus</button>` : ''}
+          <button class="admin-save" style="padding:8px 14px;font-size:.82rem" onclick="uploadGalleryPhoto(${idx})">${ic('upload')} Upload Foto</button>
+          ${item.imageData ? `<button class="admin-item-btn btn-delete-item" style="padding:5px 10px;font-size:.75rem" onclick="removeGalleryPhoto(${idx})">${ic('trash')} Hapus</button>` : ''}
         </div>
       </div>
       ${adminInput('Caption / Keterangan Foto','gl-caption',item.caption||'')}
@@ -2685,7 +2779,7 @@ function editGalleryItem(idx) {
         <button class="admin-save" onclick="saveGalleryItem(${idx})">Simpan</button>
         <button class="admin-item-btn btn-delete-item" style="padding:10px 16px" onclick="document.getElementById('gallery-edit-area').innerHTML=''">Batal</button>
       </div>
-      <div class="admin-status" id="save-gl-ok">✅ Tersimpan!</div>
+      <div class="admin-status" id="save-gl-ok">${ic('check-circle')} Tersimpan!</div>
     </div>
   `;
   area.scrollIntoView({ behavior:'smooth' });
@@ -2743,7 +2837,7 @@ function renderHeroCardTab(c) {
   const hc = portfolioData.heroCard || {};
   const hasPhoto = !!hc.photoData;
   c.innerHTML = `
-    <div class="admin-content-title">🪪 Hero Card</div>
+    <div class="admin-content-title">${ic('id')} Hero Card</div>
     <div class="admin-content-sub">Sesuaikan tampilan kartu biru tua di hero section, termasuk foto, badge, dan tag.</div>
     <div class="admin-form-card">
       <div class="admin-form-card-title">Visibilitas Lencana</div>
@@ -2763,11 +2857,11 @@ function renderHeroCardTab(c) {
       <div style="display:flex;gap:20px;align-items:center;margin-bottom:16px">
         <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;border:2px solid var(--border);background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0">
           <img id="hc-photo-preview" src="${hasPhoto?hc.photoData:''}" alt="" style="width:100%;height:100%;object-fit:cover;display:${hasPhoto?'block':'none'}">
-          <span style="color:white;font-size:1.2rem;font-weight:700;display:${hasPhoto?'none':''}" id="hc-no-photo">📷</span>
+          <span style="color:white;font-size:1.2rem;font-weight:700;display:${hasPhoto?'none':''}" id="hc-no-photo">${ic('camera')}</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:8px">
-          <button class="admin-save" style="padding:8px 16px" onclick="openPhotoPicker()">📁 Upload Foto</button>
-          ${hasPhoto ? `<button class="admin-item-btn btn-delete-item" style="padding:8px 16px" onclick="removePhoto()">🗑 Hapus Foto</button>` : ''}
+          <button class="admin-save" style="padding:8px 16px" onclick="openPhotoPicker()">${ic('upload')} Upload Foto</button>
+          ${hasPhoto ? `<button class="admin-item-btn btn-delete-item" style="padding:8px 16px" onclick="removePhoto()">${ic('trash')} Hapus Foto</button>` : ''}
         </div>
       </div>
       <p style="font-size:.78rem;color:var(--gray-text)">Setelah memilih foto, Anda dapat menyesuaikan posisi dan zoom di preview lingkaran sebelum diterapkan.</p>
@@ -2780,8 +2874,8 @@ function renderHeroCardTab(c) {
         <input class="admin-input" id="hc-tags" value="${(hc.tags||[]).join(', ')}">
       </div>
     </div>
-    <button class="admin-save" onclick="saveHeroCard()">💾 Simpan Hero Card</button>
-    <div class="admin-status" id="save-hc-ok">✅ Hero Card disimpan!</div>
+    <button class="admin-save" onclick="saveHeroCard()">${ic('save')} Simpan Hero Card</button>
+    <div class="admin-status" id="save-hc-ok">${ic('check-circle')} Hero Card disimpan!</div>
   `;
 }
 function saveHeroCard() {
@@ -2793,21 +2887,25 @@ function saveHeroCard() {
   saveData(portfolioData); renderHeroCard(); markDirty(); showSaved('save-hc-ok');
 }
 
-// ===== FAB: hidden, shortcut Ctrl+Shift+A =====
+// ===== AKSES ADMIN: hanya lewat Ctrl+Shift+A (tidak ada tombol/tautan yang terlihat) =====
 document.addEventListener('keydown', e => {
-  if(e.ctrlKey && e.shiftKey && e.key === 'A') {
+  const isShortcut = e.ctrlKey && e.shiftKey && !e.altKey && (e.code === 'KeyA' || String(e.key).toLowerCase() === 'a');
+  if(isShortcut) {
     e.preventDefault();
-    const fab = document.getElementById('admin-fab');
-    if(fab) { fab.style.display = fab.style.display === 'none' ? 'flex' : 'none'; }
+    if(document.body.classList.contains('previewing')) { backToEditor(); return; }  // kembali ke editor
+    if(adminAuthenticated) return;                                                  // sudah di editor
+    const ov = document.getElementById('admin-overlay');
+    if(ov.classList.contains('open')) closeAdmin(); else openAdmin();               // buka / tutup login
+    return;
+  }
+  if(e.key === 'Escape') {
+    const ov = document.getElementById('admin-overlay');
+    if(ov && ov.classList.contains('open')) closeAdmin();
   }
 });
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', async () => {
-  // Hide admin FAB by default
-  const fab = document.getElementById('admin-fab');
-  if(fab) fab.style.display = 'none';
-
   // Tampilkan loading saat ambil data dari Supabase
   showDbLoading('Memuat portfolio…');
 
